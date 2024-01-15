@@ -1,0 +1,244 @@
+@import url();
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* background-color: #ffff; */
+
+    font-family: "Montserrat",sans-serif;
+    color: #061E5C;
+    overflow:visible !important;
+}
+li,a,button{
+   /* font-family: "Montserrat",sans-serif; */
+   text-decoration: none;
+   font-weight: 500;
+   /* color: #061E5C; */
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    /* background-color: green;
+    border-bottom: 2px yellow solid; */
+    
+}
+.contact-nav-links{
+    display: flex;
+    flex-direction: column;
+}
+.contact-navbar{
+    /* background-color: #0088a9; */
+    text-align:end;
+    font-size: 1.25rem;
+    font-weight:700;
+    padding-bottom: 4%;
+    padding-right: 4%;
+}
+.logo{
+    cursor: pointer;
+    width: 275px;
+    height: 60px;
+    /* background-color: red;
+    border-right: 2px black solid; */
+}
+
+.nav_links{
+    list-style: none;
+
+}
+
+.nav_links li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav_links li a{
+    transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover{
+    color: #0088a9;
+}
+
+.banner{
+    text-align: center;
+    position: relative;
+}
+.banner-name{
+    position: absolute;
+    padding: 2%;
+    left: 37%;
+    top: 35%;
+    font-size: 2.25rem;
+
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.45);
+
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.banner-qualifications{
+    font-size: 1.25rem;
+    padding-top: 2%;
+    font-style: italic;
+}
+.banner-logos{
+    width: 80%;
+    height: 20%;
+    position: absolute;
+    border-radius: 4.984px;
+    background: #FFF;
+    z-index: 1;
+
+    top: 88%;
+    left: 10%;
+
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25), 
+    0px 4px 4px 0px rgba(0, 0, 0, 0.25), 
+    0px 4px 4px 0px rgba(0, 0, 0, 0.25), 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+    display: flex;
+    justify-content: center;
+    
+
+}
+.apollo-logo{
+    /* background-color: green; */
+    /* padding-right:2%; */
+    margin-top: 1%;
+    
+}
+.manipal-logo{
+    align-items: center;
+    /* background-color: red; */
+    margin-top: 2%;
+    margin-right: 2%;
+}
+.nh-logo{
+    margin-top: 2%;
+    margin-right: 2%;
+}
+.nabanir-logo{
+    margin-top: 2%;
+}
+.about-container{
+    display: flex;
+
+}
+.about-photo{
+    /* background-color: green; */
+    padding-left: 20%;
+    padding-top: 5%;
+    
+}
+.about-text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    font-size: 2rem;
+    text-decoration: underline;
+    text-decoration-color: #FF416C;
+   
+    /* background-color: red; */
+}
+
+.qualifications-container{
+    display: flex;
+    background-color:#061E5C;
+    align-items: center;
+    justify-content: end;
+    border: 2px solid black;
+    
+}
+.qualifications-header{
+    color: white;
+    
+    font-size: 2rem;
+    font-weight: 800;
+    text-decoration: underline;
+    text-decoration-color: #FF416C;
+    /* border: #0088a9 2px solid;  */
+    margin-right: 10%;
+    
+    
+}
+.qualifications-list{
+    /* border: black 2px solid; */
+    margin-right: 10%;
+    margin-top: 7%;
+    margin-bottom: 7%;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    
+}
+.qualifications-list li{
+    color: white;
+}
+.procedures-main-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+    
+}
+.procedures-container{
+    height: 300%;
+    width: 95%;
+    /* justify-content:space-between; */
+    /* align-items: center; */
+    display: flex;
+    /* background-color: red; */
+    margin-top: 2.5%;
+    
+
+    
+}
+.procedure-header{
+    font-size: 2rem;
+    font-weight: 800;
+    text-decoration: underline;
+    text-decoration-color: #FF416C;
+    /* border: #0088a9 2px solid;  */
+    margin-right: 2.5%;
+}
+.procedures-header{
+    margin-bottom: 7.5%;
+    text-align: center;
+    font-weight: 700;
+    /* border: 2px solid black; */
+}
+.procedure-1{
+    /* border: 2px black solid; */
+    background: #F5EB92;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25), 
+                0px 4px 4px 0px rgba(0, 0, 0, 0.25), 
+                0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    margin-right: 15%;
+    padding: 5% 2.5% 5% 2.5%;
+    
+    
+}
+.procedure-2{
+    /* border: 2px green solid; */
+
+    background: #FFEFD4;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25), 
+                0px 4px 4px 0px rgba(0, 0, 0, 0.25), 
+                0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+    margin-right: 15%;
+    padding: 5% 2.5% 5% 2.5%;
+}
+.procedure-3{
+    background: #FFBC7A;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25), 
+                0px 4px 4px 0px rgba(0, 0, 0, 0.25), 
+                0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    padding: 5% 2.5% 5% 2.5%;
+}
