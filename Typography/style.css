@@ -1,6 +1,12 @@
-
-/* Universal Styles */
-html {
+@font-face {
+    font-family: 'GlegooBanner';
+    src: url('../fonts/Glegoo-Regular.woff2') format('woff2'),
+         url('../fonts/Glegoo-Regular.woff') format('woff'),
+         url('../fonts/Glegoo-Regular.ttf') format('truetype')
+  }
+  
+  /* Universal Styles */
+  html {
     font-size: 16px;
     font-family: 'Arial', sans-serif;
   }
@@ -15,7 +21,9 @@ html {
     color: white;
     font-size: 28px;
     text-align: center;
-  
+    font-family: Georgia;
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
   }
   
   h2 {
@@ -32,7 +40,7 @@ html {
     max-width: 900px;
     margin: 0 auto;
     padding: 20px;
-  
+    text-align: justify;
   }
   
   
@@ -44,7 +52,7 @@ html {
     padding: 20px 0;
     background-color: #fff;
     font-size: 14px;
-  
+    font-weight: 900;
   }
   
   .header li {
@@ -72,7 +80,11 @@ html {
     border-top: 1px solid #fff;
     border-bottom: 1px solid #fff;
     color: #ffffff;
-  
+    font-weight: lighter;
+    word-spacing: 0.25em;
+    line-height: 1.4;
+    font-family: 'GlegooBanner';
+    font-size: 20px;
   }
   
   
@@ -80,7 +92,7 @@ html {
   .editorial {
     padding-bottom: 40px;
     color: #717171;
-  
+    font-family: 'Trebuchet MS', 'Times New Roman', serif;
   }
   
   /* Font Card Sections */
@@ -93,7 +105,7 @@ html {
   .font-card .creator {
     padding: 10px 20px;
     font-size: 16px;
-    
+    font-style: italic;
   }
   
   .sample {
@@ -114,9 +126,9 @@ html {
     font-family: Helvetica;
   }
   
-  /* .space {
-    
-  } */
+  .space {
+    font-family: 'Space Mono', monospace;
+  }
   
   .bold {
     font-weight: 900;

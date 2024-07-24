@@ -59,7 +59,6 @@ nav a {
   width: 68%;
   padding: 20px;
   margin: 0 auto;
-  border: 1px solid black;
 }
 
 /* Content Body */
@@ -105,7 +104,8 @@ ul.nutrition li {
   list-style: none;
   width: 200px;
   padding: 10px 20px;
-  margin-bottom: 3px;
+  /* margin-bottom: 0px; */
+  border: 1px solid black;
 }
 
 .nutrition .category {
