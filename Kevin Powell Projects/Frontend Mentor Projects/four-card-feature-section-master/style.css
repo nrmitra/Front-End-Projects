@@ -45,13 +45,13 @@ body{
 
 h1,h2,h3{
     color: var(--clr-neutral-900);
-    line-height: 1.1;
+    line-height: 1.1; /* the vertical gap between lines (when you have written multiple lines lets say in a paragraph) */
 }
 
 .wrapper{
     max-width: 1280px;
     padding-inline: 2rem;
-    margin-inline: auto;
+    margin-inline: auto; /* horizontal spacing */
 }
 
 .wrapper--narrow{
@@ -60,7 +60,7 @@ h1,h2,h3{
 
 header{
     text-align: center;
-    margin-block: 6rem;
+    margin-block: 6rem; /* vertical spacing */
 }
 
 h1{
@@ -84,7 +84,6 @@ header > p {
 
 
 .col{
-    /* border: 2px solid red; */
     display: grid;
     align-content: center;
     /* display: flex;
@@ -93,7 +92,8 @@ header > p {
 }
 
 .layout-grid > *{
-    flex: 1;
+    flex: 1;   /*This is done to ensure that the columns in the flexbox are equal sized - width.
+                Gets applied for every direct descendant of the layout-grid */
 }
 
 .card{
