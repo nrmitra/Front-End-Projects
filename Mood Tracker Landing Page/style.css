@@ -95,7 +95,8 @@ img{
     color: var(--clr-secondary);
     
 
-    padding-top: 5%;
+    padding-top: 7%;
+    padding-bottom: 2%;
 
 }
 
@@ -137,3 +138,51 @@ img{
 .how-it-works > h1{
     text-align: center;
 }
+
+.achievements{
+    color: var(--clr-purple);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    /* align-items: center; */
+    text-align: center;
+    justify-items: center;
+
+    padding-top: 10%;
+    padding-bottom: 10%;
+
+    font-size: 1.55rem;
+
+    line-height: 0.32;
+
+    
+}
+
+.achievements p{
+    color: var(--clr-primary);
+    
+}
+
+
+.mood-log,
+.daily-journal,
+.ai-features{
+    display: grid;
+    grid-template-columns: 55% 45%;
+    
+    /* border: 2px solid black; */
+    
+}
+.daily-journal{
+    grid-template-columns: 45% 55%;
+}
+
+
+.text-description{
+    text-align: center;
+    align-content: center;
+    font-size: 1.35rem;
+
+    /* border: 2px solid red; */
+}
+
