@@ -1,3 +1,11 @@
+@font-face{
+    font-family: 'Inter';
+    src:
+    local('Inter Regular'), 
+    url('assets/fonts/Inter.ttf');
+    font-weight: 400;
+}
+
 :root{
     --ff-sans: 'Poppins', sans-serif;
 
@@ -38,6 +46,9 @@
 body{
     margin:0;
     padding-block-end: 5rem;
+    font-family: 'Inter';
+    src: url('assets/fonts/Inter.ttf');
+    font-weight: 400;
 }
 
 img{
@@ -328,5 +339,5 @@ textarea{
 
 #submit:hover{
     background-color: #333333;
-    
+
 }
