@@ -56,6 +56,22 @@ img{
     display: block;
 }
 
+.logo-image{
+    display: grid;
+    grid-template-columns: 35% 65%;
+    margin-left: 3%;
+    justify-content: start;
+    border: 2px solid black;
+    
+
+}
+.logo-image > img{
+    display: inline-block;
+    height: 45px;
+    width: 45px;
+
+    border: 2px solid red;
+}
 
 nav{
     position: fixed;
@@ -84,8 +100,10 @@ nav{
 }
 
 .navbar .logo{
-    margin-left: 3%;
-    /* border: 2px solid green; */
+    /* margin-left: 3%; */
+    width: 150%;
+    align-content: center;
+    border: 2px solid green;
 }
 
 nav ul{
@@ -339,5 +357,59 @@ textarea{
 
 #submit:hover{
     background-color: #333333;
+
+}
+
+@media (max-width: 650px){
+
+    .hero{
+        padding-top: 15%;
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .achievements{
+        color: var(--clr-purple);
+        display: flex;
+        flex-direction: column;
+    
+        justify-items: center;
+        align-items: center;
+        gap: 1.6rem;
+    
+    }
+    .workflow-steps{
+        display: flex;
+        flex-direction: column;
+        gap: 1.4rem;
+    }
+    .arrow{
+        display: none;
+    }
+
+    .mood-log,
+    .daily-journal,
+    .ai-features{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card-set{
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+        gap: 1.8rem;
+    }
+
+    .card{
+        width: 80%;
+    }
+
+    .contact-us{
+        display: flex;
+        flex-direction: column;
+    }
+
 
 }
