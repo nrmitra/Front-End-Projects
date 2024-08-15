@@ -7,33 +7,13 @@
 }
 
 :root{
-    --ff-sans: 'Poppins', sans-serif;
-
-    --fw-light: 200;
-    --fw-normal: 400;
-    --fw-bold: 600;
-
-    --fs-400: 0.9375rem;
-    --fs-500: 1.25rem;
-    --fs-600: 1.625rem;
-    --fs-900: 2.5rem;
-
+    
     --clr-primary: #10131C;
     --clr-secondary: #FFFF;
     --clr-purple:#4733B9;
     --clr-orange:#FF8182;
-    
-    
     --clr-secondary-background: #4832BB;
 
-    --clr-neutral-900: hsl(234, 12%, 34%);
-    --clr-neutral-400: hsl(229, 6%, 66%);
-    --clr-neutral-100: hsl(0, 0%, 98%);
-
-    /* --clr-teal: hsl(180,58%, 56%);
-    --clr-red: hsl(0, 70%, 60%);
-    --clr-blue: hsl(212, 75%, 62%);
-    --clr-yellow: hsl(34, 89%, 65%); */
 }
 
 
@@ -48,7 +28,7 @@ body{
     padding-block-end: 5rem;
     font-family: 'Inter';
     src: url('assets/fonts/Inter.ttf');
-    font-weight: 400;
+    
 }
 
 img{
@@ -60,16 +40,15 @@ img{
     display: grid;
     grid-template-columns: 35% 65%;
     margin-left: 3%;
-    justify-content: start;
+    /* justify-content: start; */
     border: 2px solid black;
     
-
 }
 .logo-image > img{
     display: inline-block;
     height: 45px;
     width: 45px;
-
+    
     border: 2px solid red;
 }
 
@@ -79,8 +58,6 @@ nav{
     top: 3%;
     width: 100%;
     
-    /* box-shadow: ; */
-    /* float: right; */
 }
 
 .navbar{
@@ -93,16 +70,16 @@ nav{
 
 }
 
-.navbar .menu{
+.menu{
     margin-right: 3%;
     display: flex;
     /* border: 2px solid black; */
 }
 
-.navbar .logo{
-    /* margin-left: 3%; */
+.logo{
     width: 150%;
     align-content: center;
+    
     border: 2px solid green;
 }
 
@@ -295,7 +272,7 @@ nav a:hover{
     
 }
 .card{
-    width: 25%;
+    width: 28%;
     
     background: linear-gradient(45deg, #D5E3FE 0%, #F4E5E8 100%);
     
