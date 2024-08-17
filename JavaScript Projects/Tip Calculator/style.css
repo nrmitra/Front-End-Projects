@@ -1,0 +1,44 @@
+body{
+    background-color: gainsboro;
+}
+
+.container{
+    
+    background-color: white;
+    max-width: 50%;
+    min-height: 35%;
+    border: 2px solid;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20%;
+    margin-top: 10%;
+    /* text-align: center; */
+}
+
+/* label,
+p{
+    text-align: start;
+} */
+
+.calculate{
+    display: inline-block;
+    margin-top: 3%;
+    max-width: 20%;
+
+  
+}
+input{
+    width: 40%;
+}
+.message{
+    display: flex;
+}
+
+input,
+label,
+p,
+h1,
+button{
+    margin-left: 5%;
+}
