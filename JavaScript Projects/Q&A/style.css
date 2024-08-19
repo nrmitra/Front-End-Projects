@@ -1,0 +1,33 @@
+.question {
+    background: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem 1.5rem 0 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.question-btn {
+    font-size: 1.5rem;
+    background: transparent;
+    border-color: transparent;
+    cursor: pointer;
+    color: yellowgreen;
+}
+
+.fa-plus-square:before {
+    content: "\f0fe";
+}
+
+.fa, .far, .fas {
+    font-family: "Font Awesome 5 Free";
+}
+
+.fa, .fab, .fad, .fal, .far, .fas {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+}

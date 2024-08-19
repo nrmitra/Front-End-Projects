@@ -1,0 +1,136 @@
+@font-face{
+    font-family: 'Inter';
+    src:
+    local('Inter Regular'), 
+    url('assets/fonts/Inter.ttf');
+    font-weight: 400;
+}
+
+:root{
+    
+    --clr-primary: #10131C;
+    --clr-secondary: #FFFF;
+    --clr-blue:#293A8C;
+    --clr-orange:#FF8182;
+    --clr-secondary-background: #002060;
+
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body{
+    margin:0;
+    padding-block-end: 5rem;
+    font-family: 'Inter';
+    src: url('assets/fonts/Inter.ttf');
+    
+}
+
+img{
+    max-width: 100%;
+    display: block;
+}
+
+nav{
+    position: fixed;
+    left: 0;
+    top: 3%;
+    width: 100%;
+    
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li{
+    list-style: none;
+    margin: 0 15px;
+}
+
+nav a{
+    color: var(--clr-secondary);
+    text-decoration: none;
+    /* text-transform: uppercase; */
+}
+
+nav a:hover{
+    color: var(--clr-orange);
+} 
+.logo-image{
+    height:50px;
+}
+
+.menu{
+    display: flex;
+}
+
+.hero{
+    height: 70dvh;
+    background: linear-gradient(180deg, #002060 0%, #59606F 100%);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    color: var(--clr-secondary);
+
+    line-height: 0.5em;
+
+    font-size: 1.5rem;
+    
+}
+
+
+
+button{
+    width: 10%;
+    height: 45px;
+    background-color: #098ED1;
+    color: white;
+    border: none;
+}
+
+.about-us{
+    padding-top: 3%;
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.blue-highlight{
+    text-decoration: underline;
+    color: var(--clr-blue);
+}
+
+.orange-highlight{
+    text-decoration: underline;
+    color: var(--clr-orange);
+}
+
+.service-methodology{
+    width: 65dvw;
+    margin-left: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    gap: 1.25rem;
+    
+}
+
