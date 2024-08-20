@@ -85,19 +85,36 @@ nav a:hover{
 
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
 
     color: var(--clr-secondary);
-
-    line-height: 1.5em;
-
     font-size: 1.5rem;
     
 }
-.hero h1{
-    margin: 10% auto 2% auto;
+.hero-text-button{
+    margin: auto;
+    /* margin: 10% auto 2% auto; */
 }
+.hero-text-button p{
+   
+    font-size: 0.85em;
+    
+}
+
+button{
+    width: 120px;
+    height: 45px;
+    background-color: #098ED1;
+    color: white;
+    border: none;
+}
+
+.demo-button{
+    margin-top: 3%;
+    margin-bottom: auto; /* Push following elements to the bottom */
+
+}
+
 @keyframes slide {
     from{
         transform: translateX(0);
@@ -127,26 +144,14 @@ nav a:hover{
 
 
 
-button{
-    width: 10%;
-    height: 45px;
-    background-color: #098ED1;
-    color: white;
-    border: none;
-    margin-top: 3%;
-    margin-bottom: auto; /* Push following elements to the bottom */
-}
-
 .about-us{
-    /* padding-top: 3%; */
-    /* margin: 5% auto; */
     height: 65dvh;
     
     display: flex;
     flex-direction: column;
-
     justify-content: center;
     align-items: center;
+
 }
 
 .about-us h1{
@@ -154,7 +159,7 @@ button{
     width: 50%;
     font-size: 2.75rem;
     text-align: center;
-    margin: 3% auto;
+    margin-bottom: 3%;
 }
 
 .about-us p{
@@ -163,7 +168,8 @@ button{
     font-size: 1.25rem;
     line-height: 1.5em;
     text-align: center;
-    margin-bottom: 4%;
+
+    margin-bottom: 3.5%;
 }
 
 .blue-highlight{
