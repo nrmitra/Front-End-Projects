@@ -244,9 +244,18 @@ button{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 50dvh;
+    height: 45dvh;
 
-    border: 2px solid green;
+    margin-bottom: 5%;
+
+    /* border: 2px solid green; */
+}
+
+.our-reach-title{
+    margin: auto 0;
+    font-size: 2.5rem;
+    /* border: 2px solid blue; */
+
 }
 
 
@@ -256,18 +265,17 @@ button{
     
     width: 100%;
 
-    border: 2px solid red;
+    /* border: 2px solid red; */
 }
 
-.group{
-    margin: 0 auto;
-    border: 2px solid green;
+.group h2,p{
+    text-align: center;
 }
 
 .figure{
-    border: 2px solid yellow;
+    /* border: 2px solid yellow; */
     text-align: center;
-    font-size: 2.85rem;
+    font-size: 3.75rem;
 
     color: var(--clr-blue);
 }
