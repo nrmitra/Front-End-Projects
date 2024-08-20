@@ -19,11 +19,13 @@
 *,
 *::before,
 *::after {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
 body{
-    margin:0;
+    /* margin:0; */
     padding-block-end: 5rem;
     font-family: 'Inter';
     src: url('assets/fonts/Inter.ttf');
@@ -70,6 +72,7 @@ nav a:hover{
 } 
 .logo-image{
     height:50px;
+    margin-left: 2%;
 }
 
 .menu{
@@ -87,9 +90,38 @@ nav a:hover{
 
     color: var(--clr-secondary);
 
-    line-height: 0.5em;
+    line-height: 1.5em;
 
     font-size: 1.5rem;
+    
+}
+.hero h1{
+    margin: 10% auto 2% auto;
+}
+@keyframes slide {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+.logos{
+    display: flex;
+    flex-direction: row;
+    white-space: nowrap; /* is this needed? */
+    overflow: hidden; /* prevents the horizontal scroll white screen */
+    
+}
+
+.logos-slide{
+    display: flex;
+    flex-grow: 0; /* is this needed? */
+    flex-shrink: 0;
+    gap: 1.5em;
+    animation: 17s slide infinite linear;
+    /* border: 2px solid red; */
+    margin-top: auto; /* Push it and following elements to the bottom */
     
 }
 
@@ -101,15 +133,37 @@ button{
     background-color: #098ED1;
     color: white;
     border: none;
+    margin-top: 3%;
+    margin-bottom: auto; /* Push following elements to the bottom */
 }
 
 .about-us{
-    padding-top: 3%;
+    /* padding-top: 3%; */
+    /* margin: 5% auto; */
+    height: 65dvh;
+    
     display: flex;
     flex-direction: column;
 
     justify-content: center;
     align-items: center;
+}
+
+.about-us h1{
+    
+    width: 50%;
+    font-size: 2.75rem;
+    text-align: center;
+    margin: 3% auto;
+}
+
+.about-us p{
+    
+    width: 80%;
+    font-size: 1.25rem;
+    line-height: 1.5em;
+    text-align: center;
+    margin-bottom: 4%;
 }
 
 .blue-highlight{
@@ -134,3 +188,140 @@ button{
     
 }
 
+.steps{
+    background-color: var(--clr-secondary-background);
+    height: 65dvh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+
+    margin: 5% auto;
+    
+
+    font-size: 1.15rem;
+    justify-content: center;
+
+}
+
+.step{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.workflow-steps{
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    align-items: center;
+    margin-top: 3%;
+    
+    gap: 1.3em;
+
+    font-size: 1.25rem;
+}
+
+.number{
+    background-color: var(--clr-orange);
+    height: 50px;
+    width: 50px;
+    display: inline-flex; /* Use inline-flex to keep the element inline while using flexbox */
+    justify-content: center; /* Horizontally center the content */
+    align-items: center; /* Vertically center the content */
+    border-radius: 50%;
+}
+
+.our-reach{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50dvh;
+
+    border: 2px solid green;
+}
+
+
+.reach-stats{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+    width: 100%;
+
+    border: 2px solid red;
+}
+
+.group{
+    margin: 0 auto;
+    border: 2px solid green;
+}
+
+.figure{
+    border: 2px solid yellow;
+    text-align: center;
+    font-size: 2.85rem;
+
+    color: var(--clr-blue);
+}
+
+.testimonials{
+    height: 60dvh;
+    /* background-color: green; */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    text-align: center;
+}
+
+.testimonials h1{
+    border: 2px solid brown;
+    margin: 3% auto;
+}
+
+.testimonial-carousel{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+
+    border: 2px solid black;
+    height: 80%;
+}
+
+
+
+.user-details{
+    display: grid;
+    grid-template-columns: 20% 80%;
+}
+
+.user-img{
+    height: 72px;
+    width: 72px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.user-feedback{
+    font-style: italic;
+}
+
+.card{
+    width: 80%;
+    border-radius: 15px;
+    background:linear-gradient(90deg, #002060 0%, #59606F 100%);
+    color: white;
+    height: 80%;
+    
+}
+.card h2{
+    text-align: left;
+    margin-left: 3%;
+}
+
+.card p{
+    margin-left: 3%;
+    text-align: left;
+    font-size: .85rem;
+}
