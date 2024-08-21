@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>OWL-Carousel</title>
+</head>
+<body>
+
+    <!-- Set up your HTML -->
+    <div class="wrapper">
+
+        <div class="owl-carousel owl-theme">
+            <div class="card">
+                <div class="user-details">
+                    <img class="user-img" src="gallery/testimonials/satish_drl.png" alt="satish reddy">
+                    <div class="user-name-title">
+                        <h2 class="user-name">Satish Reddy</h2>
+                        <p class="user-title">MD - Dr. Reddy's ('98)</p>
+                    </div>
+                    
+                </div>     
+                <p><span class="user-feedback">"Our strategy in emerging as a leading
+                    pharmaceutical company through ethical promotion of innovative products
+                    has been ably supported by the valuable inputs from C MARC...."
+                </span></p>
+            </div>
+            <div class="card">
+                <div class="user-details">
+                    <img class="user-img" src="gallery/testimonials/pankaj_zydus.png" alt="pankaj patel">
+                    <div class="user-name-title">
+                        <h2 class="user-name">Pankaj Patel</h2>
+                        <p class="user-title">Chairman - Zydus ('99)</p>
+                    </div>               
+                </div>    
+                <p><span class="user-feedback">"I am greatly impressed by the services offered
+                    by C MARC. As package buyers, we find CPR a unique database. The research concept
+                    of which is totally different from other management/reasearch models. The strategic
+                    recommendations of CPR has immensely helped us in formulating our marketing plan."
+                </span></p>
+            </div>
+            <div class="card">
+                <div class="user-details">
+                    <img class="user-img" src="gallery/testimonials/shailesh_sanofi.png" alt="shailesh ayyangar">
+                    <div class="user-name-title">
+                        <h2 class="user-name">Shailesh Ayyangar</h2>
+                        <p class="user-title">MD - India, Sanofi ('12)</p>
+                    </div>
+                </div>
+                <p><span class="user-feedback">"Some of the present day iconic brands of pharma industry
+                    owe their current positioning and success to Prof. Mitra through C MARC.
+                    "
+                </span></p>
+            </div>
+            <div class="card">
+                <div class="user-details">
+                    <img class="user-img" src="gallery/testimonials/Khorakiwala_wockhardt.png" alt="habil khorakiwala">
+                    <div class="user-name-title">
+                        <h2 class="user-name">Habil F Khorakiwala</h2>
+                        <p class="user-title">Chairman, Wockhardt ('99)</p>
+                    </div>
+                </div>
+                <p><span class="user-feedback">"Wockhardt has been utilizing the services of C MARC for more than 10 years. 
+                    C MARC was the first to start the Continuous Prescription Audit. What has impressed me the most is that C MARC 
+                    is not only providing data information, but also is helping the organization critically evaulating, analysing 
+                    and commenting on the information and the brand."
+                </span></p>
+            </div>
+            <!-- <div> Your Item 4 </div> -->
+            
+        </div>
+
+
+
+    </div>
+    
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <!-- <script src="owlcarousel/owl.carousel.min.js"></script> -->
+
+    <script>
+        $(document).ready(function(){
+            $('.owl-carousel').owlCarousel({
+                loop:true,
+                margin:10,
+                center: true,
+                nav:true,
+                autoplay:true,
+                autoplayTimeout:5000,
+                autoplayHoverPause:true,
+                responsive:{
+                    0:{
+                        items:1
+                    },
+                    600:{
+                        items:3
+                    },
+                    1000:{
+                        items:3
+                    }
+                }
+            })
+        }
+        );
+    </script>
+</body>
+</html>

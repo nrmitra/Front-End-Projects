@@ -280,6 +280,8 @@ button{
     color: var(--clr-blue);
 }
 
+
+
 .testimonials{
     height: 60dvh;
     /* background-color: green; */
@@ -290,11 +292,11 @@ button{
 }
 
 .testimonials h1{
-    border: 2px solid brown;
-    margin: 3% auto;
+    /* border: 2px solid brown; */
+    margin: 5% auto;
 }
 
-.testimonial-carousel{
+/* .testimonial-carousel{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     justify-items: center;
@@ -338,4 +340,80 @@ button{
     margin-left: 3%;
     text-align: left;
     font-size: .85rem;
+} */
+
+.testimonial-carousel{
+    /* border: 2px solid black; */
+    height: 50vh;
 }
+
+.owl-carousel{
+    /* border: 2px solid blue; */
+    height: 40vh;
+}
+
+.user-details{
+    display: grid;
+    grid-template-columns: 20% 80%;
+
+    align-items: center;
+}
+
+.user-img{
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.user-feedback{
+    font-style: normal;
+}
+
+.card{
+    width: 90%;
+    /* border-radius: 15px; */
+    background:linear-gradient(90deg, #002060 0%, #59606F 100%);
+    color: white;
+    
+    padding: 5%;
+    height: 35vh;
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+
+    /* text-align: center; */
+    
+}
+.card h2{
+    text-align: left;
+    margin-left: 3%;
+}
+
+.card p{
+    margin-left: 3%;
+    text-align: left;
+    font-size: .9rem;
+}
+
+.testimonial-carousel .owl-item .card{
+    background: white;
+    color: rgb(111, 110, 110);
+    /* opacity: 0.55; */
+}
+
+.testimonial-carousel .owl-item.center .card{
+    opacity: 1;
+    background: linear-gradient(180deg, #002060 0%, #59606F 100%);
+    color: white;
+}
+
+.user-img{
+    margin-bottom: 15px;
+}
+
+.user-name-title{
+    font-size: 1.2em;
+}
+
