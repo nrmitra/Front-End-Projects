@@ -6,7 +6,9 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>C MARC</title>
+    <link rel="icon" type="image/x-icon" href="gallery/cmarc_icon.png">
 </head>
 <body>
     <header>
@@ -17,9 +19,28 @@
                 
                 
                 <ul class="menu">
-                    <li><a href="#about-section">About</a></li>
-                    <li><a href="#solutions-section">Solutions</a></li>
-                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#about-section">About <i class="fa fa-caret-down"></i></a>
+                       <div class="dropdown__menu">
+                        <ul>
+                            <li><a href="history.html">Our History</a></li>
+                            <li><a href="ourteam.html">Our Team</a></li>
+                        </ul>
+                       </div>
+                    </li>
+                    <li><a href="#solutions-section">Solutions <i class="fa fa-caret-down"></i></a>
+                        <div class="dropdown__menu">
+                            <ul>
+                                <li><a href="#steps">Continuous Prescription Research (CPR)</a></li>
+                                <li><a href="">Rx MarketIQ</a></li>
+                                <!-- <li><a href="">Prescription Performance & Market Intelligence Platform</a></li> -->
+                                <li><a href="">Mood Tracker App</a></li>
+                                <li><a href="diabetotracker.html">Diabeto Tracker</a></li>
+                                <li><a href="prescriberlist.html">Prescriber Validation</a></li>
+                                <li><a href="strategyworkshop.html">Strategy Workshops</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="testimonials.html">Testimonials</a></li>
                     <li><a href="#contact-us">Contact</a></li>
                 </ul>
             </div>
@@ -82,7 +103,7 @@
             <button type="button" class="more-about-us">More About Us</button>
         </div>
 
-        <div class="steps">
+        <div class="steps" id="steps">
             <h1>Steps involved in our flagship <span class="orange-highlight">CPR™</span> service</h1>
 
             <div class="workflow-steps">
