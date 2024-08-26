@@ -675,3 +675,46 @@ figcaption{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
+
+.contact-wrapper{
+    max-height: 100vh;
+    display: grid;
+    grid-template-columns: 75% 25%;
+
+}
+.contact-form-wrapper{
+    margin: 5% auto;
+    text-align: center;
+    
+}
+.contact-form-wrapper > h1,#submit{
+    margin-bottom: 10%;
+}
+.contact-details{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+.contact-details .info h3{
+    color: var(--clr-orange);
+    text-decoration: underline;
+    margin-bottom: 5%;
+}
+
+.blue-background{
+    background: var(--clr-secondary-background);
+    position: relative;
+    z-index: 1;
+}
+
+.google-map iframe{
+    position: relative;
+    display: block;
+    margin-top: 20%;
+    
+    max-height: 100%;
+    max-width: 95%;
+    z-index: 2;
+    margin-left: -50%;
+
+}
