@@ -571,24 +571,8 @@ textarea{
 }
 
 
+/* OLD-LAYOUT - OUR HISTORY
 
-/* .about-us-banner img{
-    display: inline-block;
-    max-height: 100%;
-    max-width: 100%;
-    
-    object-fit: contain;
-    overflow: hidden;
-}
-
-.about-us-banner{
-    background-image: url('/gallery/iphmr_campus.png');
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    height: 100%;
-
-} */
 .our-history h2{
     width: 90%;
     margin: 2% auto;
@@ -607,11 +591,9 @@ textarea{
 
     margin: 0 auto;
 
-    /* margin-top: 3%;
-    margin-bottom: 3%; */
+    
     width: 90%;
 
-    /* border: 2px solid red; */
 }
 figcaption{
     text-align: center;
@@ -620,17 +602,52 @@ figcaption{
 .our-history-pics img{
     height: 65%;
     
+} */
+
+.our-history{
+    margin: 5% auto;
+    margin-left: 3%;
+    display: grid;
+    grid-template-columns: 35% 65%;
+
+    height: 45vh;
+   
+}
+.our-history-pics{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+
+.our-history-content{
+
+    margin-left: 3%;
+    width: 90%;
+    font-size: 15px;
+    line-height: 1.5rem;
+}
+
+.our-history-content h2,p{
+    margin-bottom: 3%;
+    text-align: start;
+}
+.iphmr-wrapper{
+    margin-left: 3%;
+}
+.iphmr-wrapper h2,p{
+    text-align: start;
 }
 
 .iphmr-grid{
     display: flex;
-    flex-direction: column;    
+    flex-direction: column; 
+    
 }
 
 .iphmr-grid img{
     width: 90%;
     height: 90%;
-    margin: 2% auto;
+    /* margin: 2% auto; */
 }
 
 .our-team-container{
@@ -700,6 +717,9 @@ figcaption{
     text-decoration: underline;
     margin-bottom: 5%;
 }
+.contact-details .info p{
+    text-align: center;
+}
 
 .blue-background{
     background: var(--clr-secondary-background);
@@ -717,4 +737,11 @@ figcaption{
     z-index: 2;
     margin-left: -50%;
 
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    
+
+}
+.carousel-control-prev,
+.carousel-control-next{
+    margin: auto 0;
 }
