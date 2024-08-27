@@ -36,6 +36,29 @@ img{
     max-width: 100%;
     display: block;
 }
+/* Bootstrap navbar related */
+.nav-link{
+    color: var(--clr-secondary) !important;
+    
+}
+
+.navbar-nav .nav-item a:hover{
+    color: var(--clr-orange);
+    background-color: transparent;
+} 
+
+
+.navbar-nav .dropdown-menu{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;;
+    background-color: transparent;
+    
+}
+
+.navbar-nav .dropdown-item{
+    color: var(--clr-secondary);
+
+}
+/* Bootstrap navbar related --- ENDS HERE*/
 
 nav{
     position: fixed;
@@ -47,7 +70,7 @@ nav{
 .navbar{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-between;    
 }
 
 nav ul{
@@ -312,7 +335,7 @@ img:hover{
 
 
 .testimonials{
-    height: 60dvh;
+    height: 60vh;
     /* background-color: green; */
     display: flex;
     flex-direction: column;
@@ -322,7 +345,8 @@ img:hover{
 
 .testimonials h1{
     /* border: 2px solid brown; */
-    margin: 5% auto;
+    /* margin: 5% auto; */
+    margin-bottom: 3%;
 }
 
 /* .testimonial-carousel{
@@ -450,7 +474,7 @@ img:hover{
 
 .affiliations{
     width: 80%;
-    margin: 10% auto;
+    margin: 5% auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -854,8 +878,50 @@ figcaption{
         justify-content: center;
 
     }
+    .hero p{
+        font-size: 0.8rem;
+    }
+    .about-us h1{
+        margin-top: 8%;
+        font-size: 1.75rem;
+    }
 
-   
+    .about-us p{
+        font-size: 1.1rem;
+        margin: 5% auto;
+    }
+
+    .steps h1{
+        font-size: 1.5rem;
+    }
+
+    .steps{
+        margin: 5% auto;
+    }
+
+    .workflow-steps{
+       
+        display: flex;
+        flex-direction: column;
+    }
+    .arrow-img{
+        display: none;
+    }
+
+    .service-methodology h1{
+        font-size: 1.3rem;
+       
+    }
+
+
+    .reach-stats{
+        display: grid;
+       
+    }
+
+   .card-local{
+    width: 80%;
+   }
 
 
 
