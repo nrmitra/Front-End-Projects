@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>C MARC</title>
     <link rel="icon" type="image/x-icon" href="gallery/cmarc_icon.png">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
 </head>
 <body>
     <header>
@@ -41,7 +44,7 @@
                         </div>
                     </li>
                     <li><a href="testimonials.html">Testimonials</a></li>
-                    <li><a href="#contact-us">Contact</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </div>
         </nav>
@@ -54,7 +57,22 @@
                 <h1>Pioneers of Prescription Research</h1>
                 <p>Providing strategic insights to leading pharmaceuticals</p>
                 <p>since 1977</p>
-                <button type="button" class="demo-button">Book a Demo</button>
+                <form style="margin-top: 8%;">
+                    <div class="mb-3">
+                      <label for="exampleInputEmail1" class="form-label" style="font-size: .90rem; font-style: italic;">
+                        Sign up to our newsletter to receive monthly industry updates!
+                      </label>
+                      <div class="d-flex" style="gap: 1.1rem;">
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Your email">
+                        <button type="submit" class="btn btn-primary">Submit</button>
+
+                      </div>
+                      
+                      <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
+                    </div>
+                    
+                </form>
+                <!-- <button type="button" class="demo-button">Book a Demo</button> -->
             </div>
 
             <div class="logos">
@@ -133,17 +151,17 @@
             <h1 class="our-reach-title">Our <span class="blue-highlight">CPR™ panel</span></h1>
             <div class="reach-stats">
                 <div class="group">
-                    <h1 class="figure">20+</h1>
+                    <h1 class="figure-reach">20+</h1>
                     <h2>Specialties</h2>
                     <p>panel network</p>
                 </div>
                 <div class="group">
-                    <h1 class="figure">5 Mn+</h1>
+                    <h1 class="figure-reach">5 Mn+</h1>
                     <h2>Prescriptions</h2>
                     <p>processed annualy</p>
                 </div>
                 <div class="group">
-                    <h1 class="figure">100+</h1>
+                    <h1 class="figure-reach">100+</h1>
                     <h2>cities & towns</h2>
                     <p>panel coverage</p>
                 </div>
@@ -156,9 +174,11 @@
             say about us!
             </h1>
             <div class="testimonial-carousel">
-                <div class="owl-carousel owl-theme">
+            <!-- <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel"> -->
+
+                <div class="owl-carousel owl-theme">  <!--  "owl-carousel owl-theme" -->
                 
-                    <div class="card">
+                    <div class="card-local">
                         <div class="user-details">
                             <img class="user-img" src="gallery/testimonials/satish_drl.png" alt="satish reddy">
                             <div class="user-name-title">
@@ -169,11 +189,13 @@
                         </div>     
                         <p><span class="user-feedback">"Our strategy in emerging as a leading
                             pharmaceutical company through ethical promotion of innovative products
-                            has been ably supported by the valuable inputs from C MARC...."
+                            has been ably supported by the valuable inputs from C MARC. Especially, 
+                            in the creation and evaluation of brand identity and communication strategies by DRL, C MARC services have 
+                            been of immense help."
                         </span></p>
                     </div>
 
-                    <div class="card">
+                    <div class="card-local">
                         <div class="user-details">
                             <img class="user-img" src="gallery/testimonials/pankaj_zydus.png" alt="pankaj patel">
                             <div class="user-name-title">
@@ -188,7 +210,7 @@
                         </span></p>
                     </div>
 
-                    <div class="card">
+                    <div class="card-local">
                         <div class="user-details">
                             <img class="user-img" src="gallery/testimonials/Khorakiwala_wockhardt.png" alt="habil khorakiwala">
                             <div class="user-name-title">
@@ -203,7 +225,7 @@
                         </span></p>
                     </div>
 
-                    <div class="card">
+                    <div class="card-local">
                         <div class="user-details">
                             <img class="user-img" src="gallery/testimonials/shailesh_sanofi.png" alt="shailesh ayyangar">
                             <div class="user-name-title">
@@ -217,7 +239,8 @@
                         </span></p>
                     </div>
 
-                </div>
+                </div> 
+                <!-- owl-carousel -->
 
             </div>
         </div>
@@ -235,18 +258,23 @@
         $(document).ready(function(){
             $('.owl-carousel').owlCarousel({
                 loop:true,
+                dots: false,
                 margin:10,
                 center: true,
                 nav:true,
+                navText : ["<i class='fa fa-chevron-left'></i>","<i class='fa fa-chevron-right'></i>"],
                 autoplay:true,
                 autoplayTimeout:5000,
                 autoplayHoverPause:true,
                 responsive:{
                     0:{
-                        items:1
+                        items:1,
+                        singleItem: true
                     },
-                    600:{
-                        items:3
+                    800:{
+                        items:3,
+                        singleItem: true,
+                        
                     },
                     1000:{
                         items:3
@@ -256,5 +284,7 @@
         }
         );
     </script>
+     <!-- Bootstrap 5 carousel -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -139,6 +139,10 @@ button:hover{
     background-color: var(--clr-orange);
 }
 
+img:hover{
+    transform: scale(1.15,1.15);
+}
+
 @keyframes slide {
     from{
         transform: translateX(0);
@@ -297,8 +301,8 @@ button:hover{
     text-align: center;
 }
 
-.figure{
-    /* border: 2px solid yellow; */
+.figure-reach{
+    
     text-align: center;
     font-size: 3.75rem;
 
@@ -395,14 +399,14 @@ button:hover{
     font-style: normal;
 }
 
-.card{
+.card-local{
     width: 90%;
     /* border-radius: 15px; */
     background:linear-gradient(90deg, #002060 0%, #59606F 100%);
     color: white;
     
     padding: 5%;
-    height: 35vh;
+    height: 40vh;
     display: flex;
     flex-direction: column;
 
@@ -411,24 +415,26 @@ button:hover{
     /* text-align: center; */
     
 }
-.card h2{
+.card-local h2{
     text-align: left;
     margin-left: 3%;
+
 }
 
-.card p{
+.card-local p{
     margin-left: 3%;
     text-align: left;
     font-size: .9rem;
+    
 }
 
-.testimonial-carousel .owl-item .card{
+.testimonial-carousel .owl-item .card-local{
     background: white;
     color: rgb(111, 110, 110);
     /* opacity: 0.55; */
 }
 
-.testimonial-carousel .owl-item.center .card{
+.testimonial-carousel .owl-item.center .card-local{
     opacity: 1;
     background: linear-gradient(180deg, #002060 0%, #59606F 100%);
     color: white;
@@ -672,24 +678,27 @@ figcaption{
 .our-team-container h1{
     margin: 2% auto;
 }
+.our-team-container p, 
+.our-team-grid-container p{
+    text-align: center;
+}
 
 .our-team-grid-container{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 5%;
-    width: 80%;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 3%;
+    width: 90%;
     margin: auto;
 
    
     justify-items: center;
     
-    border: 2px solid red;
     text-align: center;
 }
 
 .our-team-grid-container img{
-    border: 2px solid green;
-    object-fit: cover;
+    /* border: 2px solid green; */
+    object-fit: contain;
     height: 100%;
     width: 100%;
 }
