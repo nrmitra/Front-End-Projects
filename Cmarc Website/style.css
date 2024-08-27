@@ -760,3 +760,103 @@ figcaption{
 .carousel-control-next{
     margin: auto 0;
 }
+
+@media (max-width: 650px){
+
+    .our-history-wrapper{
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+       
+    }
+    .our-history-wrapper h2,
+    .our-history-wrapper p{
+        text-align: center;
+
+    }
+
+    .our-history{
+        
+        display: flex;
+        flex-direction: column;
+    }
+    .our-history-content{
+        margin-top: 5%;
+    }
+
+    .iphmr-wrapper{
+        margin-top: 25%;
+        
+    }
+
+
+    .our-team-container h1,
+    .our-team-container p{
+        margin-top: 10%;
+
+    }
+    .our-team-grid-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .team-person{
+        width: 65%;
+        margin: 5% auto;
+    }
+
+    .testimonials-grid{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .services-banner-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .services-banner-content h1{
+        font-size: 1.5rem;
+       
+    }
+
+    .services-content{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact-wrapper{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact-details{
+        margin-top: 25%;
+        display: flex;
+        flex-direction: column;
+        font-size: 1.5rem;
+    }
+
+    .blue-background{
+        background-color: var(--clr-secondary);
+        
+
+    }
+
+    .google-map iframe{
+        display: block;
+        margin: 10% auto;
+    }
+
+    .google-map{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+   
+
+
+
+}
