@@ -651,7 +651,8 @@ figcaption{
    
 }
 
-.our-history-wrapper img:hover{
+.our-history-wrapper img:hover,
+.service-methodology img:hover{
     transform: none;
 }
 
