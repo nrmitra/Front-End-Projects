@@ -841,21 +841,13 @@ figcaption{
         display: flex;
         flex-direction: column;
         height: 100vh;
-        border: 2px solid black;
+        /* border: 2px solid black; */
     }
     .our-history-content{
         margin-top: 5%;
+       
     }
    
-
-   
-
-    .iphmr-wrapper{
-        /* margin-top: 5%; */
-        border: 2px solid red;
-        
-    } 
-
 
     .our-team-container h1,
     .our-team-container p{
