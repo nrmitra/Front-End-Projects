@@ -188,7 +188,7 @@ img:hover{
     flex-grow: 0; /* is this needed? */
     flex-shrink: 0;
     gap: 1.5em;
-    animation: 17s slide infinite linear;
+    animation: 22s slide infinite linear;
     /* border: 2px solid red; */
     margin-top: auto; /* Push it and following elements to the bottom */
     
@@ -641,6 +641,10 @@ figcaption{
     
 } */
 
+/* .our-history-wrapper{
+    height: 100vh;
+} */
+
 .our-history{
     margin: 5% auto;
     margin-left: 3%;
@@ -662,7 +666,8 @@ figcaption{
 }
 
 
-.our-history-content{
+.our-history-content,
+.our-history-content-2{
 
     margin-left: 3%;
     width: 90%;
@@ -670,10 +675,15 @@ figcaption{
     line-height: 1.5rem;
 }
 
-.our-history-content h2,p{
+.our-history-content p{
     margin-bottom: 3%;
     text-align: start;
 }
+
+.our-history-content-2{
+    margin-bottom: 3%;
+}
+
 .iphmr-wrapper{
     margin-left: 3%;
 }
@@ -800,8 +810,9 @@ figcaption{
 @media (max-width: 650px){
 
     .our-history-wrapper{
-        display: grid;
-        grid-template-rows: 1fr 1fr;
+        display: flex;
+        flex-direction: column;
+        /* grid-template-rows: 1fr 1fr 1fr 1fr; */
        
     }
     .our-history-wrapper h2,
@@ -810,19 +821,26 @@ figcaption{
 
     }
 
-    .our-history{
+    .our-history,
+    .our-history-content-2{
         
         display: flex;
         flex-direction: column;
+        height: 100vh;
+        border: 2px solid black;
     }
     .our-history-content{
         margin-top: 5%;
     }
+   
+
+   
 
     .iphmr-wrapper{
-        margin-top: 25%;
+        /* margin-top: 5%; */
+        border: 2px solid red;
         
-    }
+    } 
 
 
     .our-team-container h1,
