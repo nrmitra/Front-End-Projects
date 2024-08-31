@@ -1,0 +1,198 @@
+@font-face{
+    font-family: 'Inter';
+    src:
+    local('Inter Regular'), 
+    url('assets/fonts/Inter.ttf');
+    font-weight: 400;
+}
+
+:root{
+    
+    --clr-primary: #FFFF;;
+    --clr-secondary: #B2B2B4;
+    --clr-grey:#D9D9D9;
+   
+    --clr-secondary-background: #002060;
+    background-color: #10131C;
+
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    /* margin:0; */
+    padding-block-end: 5rem;
+    font-family: 'Inter';
+    src: url('assets/fonts/Inter.ttf');
+    max-height: 100vh;
+    
+    /* background-color: #10131C; */
+}
+
+img{
+    max-width: 100%;
+    display: block;
+}
+
+nav{
+    position: fixed;
+    left: 0;
+    top: 3%;
+    width: 100%;
+    
+}
+.logo-image{
+    height: 50px;
+    margin-left: 3%;
+}
+
+.nav-link{
+    color: var(--clr-primary) !important;
+    
+}
+
+.hero-section{
+    height: 70dvh;
+    background: linear-gradient(180deg, #000 0%, #59606F 100%);
+
+    color: var(--clr-primary);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.hero-section-grid{
+    
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+
+    margin: auto 0;
+    
+
+}
+
+.hero-section-content{
+    
+    text-align: center;
+    
+}
+
+.hero-section-content h1{
+    font-size: 2.8rem;
+}
+
+.hero-section-content p{
+    font-size: 1.4rem;
+    font-style: italic;
+}
+
+.logos{
+    
+    display: flex;
+    flex-direction: row;
+    white-space: nowrap; /* is this needed? */
+    overflow: hidden; /* prevents the horizontal scroll white screen */
+    
+}
+
+.logos-slide{
+    display: flex;
+    flex-grow: 0; /* is this needed? */
+    flex-shrink: 0;
+    gap: 1.5em;
+    animation: 22s slide infinite linear;
+    /* border: 2px solid red; */
+    margin-top: auto; /* Push it and following elements to the bottom */
+    
+}
+
+.features-section{
+    background-color: #10131C;
+    color: white;
+}
+.features-section > h1{
+   
+    height: 20vh;
+
+    text-align: center;
+    align-content: center; /*vertically aligns the text in the h1 box*/
+}
+
+.grey-highlighter{
+    text-decoration: underline;
+    color: var(--clr-secondary);
+}
+
+.feature-image-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    /* background-color: #10131C; */
+    background-color: #10131C;
+    color: var(--clr-primary);
+}
+
+.accordion{
+    width: 75%;
+    /* border: 2px solid red; */
+
+    margin-left: 20%;
+    
+}
+.accordion-item{
+    background: #10131C;
+    color: var(--clr-primary);
+}
+.accordion-body{
+    /* background: linear-gradient(180deg, #D9D9D9 0%, #737373 100%); */
+    background: #737373;
+    color: var(--clr-primary);
+
+}
+.accordion-button::after{
+    filter: invert(1);
+}
+.accordion-button:not(.collapse){
+    color: inherit;
+    background: #10131C;
+}
+
+.accordion .accordion-item {
+    border: none; /* This removes the border around the accordion item */
+  }
+
+.accordion .accordion-header{
+    border-top: 1px solid white;
+ 
+}
+
+.image-illustration{
+    background-color: rgb(217, 217, 217,.65);
+    
+    border-radius: 15px;
+    margin: auto;
+
+    padding: 5%;
+
+}
+
+.feature-image-container{
+    margin: 5% auto;
+}
+.feature-description{
+    text-align: center;
+    margin: auto;
+}
+
+.feature-description p {
+    font-size: 1.4rem;
+}
+
