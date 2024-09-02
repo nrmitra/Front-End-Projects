@@ -117,7 +117,7 @@ nav{
     flex-grow: 0; /* is this needed? */
     flex-shrink: 0;
     gap: 1.5em;
-    animation: 22s slide infinite linear;
+    animation: 25s slide infinite linear;
     /* border: 2px solid red; */
     margin-top: auto; /* Push it and following elements to the bottom */
     
@@ -264,4 +264,106 @@ nav{
 
 .contact-us > p{
     font-size: 1.5rem;
+}
+
+.mobile{
+    display: none;
+}
+
+@media (max-width: 650px){
+
+    .hero-section{
+        display: flex;
+        flex-direction: column;
+
+        min-height: 90vh;
+    }
+
+    .hero-section-grid{
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .hero-section-content{
+        margin: 10% auto;
+    }
+
+    .feature-image-container{
+        display: flex;
+        flex-direction: column;
+
+        min-height: 60vh;
+    }
+    #image-1{
+        margin-top: 5%;
+        
+    }
+    #image-5{
+        min-width: 75vw;
+    }
+
+    #image-2{
+        align-items: center;
+        min-height: 30vh;
+        min-width: 65vw;
+    }
+
+    .desktop{
+        display: none;
+       
+    }
+
+    .mobile{
+        display: block;
+    }
+
+    .corp-to-brand{
+       
+        min-width: 80vw;
+        margin: 5% auto;
+       
+    }
+
+    .accordion-summary{
+        min-height: 25vh;
+        max-width: 90%;
+        
+       
+    }
+
+    .peer-performance-mobile{
+       margin: 2% auto;
+       
+    }
+    .peer-performance-mobile > h1{
+        margin-bottom: 5%;
+    }
+    .spreadsheet-images > img{
+        display: none; 
+    }
+
+    .spreadsheet-description > h1{
+        margin-bottom: 10%;
+    }
+
+    .contact-us{
+        max-width: 80%;
+        
+    }
+
+    .contact-us{
+        margin: auto;
+        
+    }
+
+    footer img{
+        display: none;
+    }
+
+
+
+ 
+
+
 }
