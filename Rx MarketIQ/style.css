@@ -188,13 +188,19 @@ nav{
 }
 
 .image-illustration{
-    background-color: rgb(217, 217, 217,.65);
+    /* background-color: rgb(217, 217, 217,.65);
     background: linear-gradient(180deg, #D9D9D9 0%, #737373 100%);
     background: linear-gradient(180deg, rgba(217, 217, 217, 0.3) 0%, rgba(115, 115, 115, 0.3) 100%);
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-
-    
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; */
+    /* From https://css.glass */
+    background: rgba( 255, 255, 255, 0.1 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 2px );
+    -webkit-backdrop-filter: blur( 2px );
     border-radius: 15px;
+    /* border: 1px solid rgba( 255, 255, 255, 0.18 ); */
+
+    /* border-radius: 15px; */
     margin: auto;
 
     padding: 3%;
@@ -221,7 +227,8 @@ nav{
 
 #image-2,
 #image-3,
-#image-4{
+#image-4,
+#image-5{
     display: none;
 }
 
@@ -246,10 +253,15 @@ nav{
 
 .spreadsheet-description{
     width: 60%;
+    margin: 5% auto;
 }
 
 .contact-us{
     max-height: 50vh;
     color: var(--clr-primary);
     text-align: center;
+}
+
+.contact-us > p{
+    font-size: 1.5rem;
 }

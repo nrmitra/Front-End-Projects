@@ -9,7 +9,17 @@
     <!-- Bootstrap 5 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-</head>
+    <!-- MailerLite Universal -->
+    <script>
+      (function(w,d,e,u,f,l,n){w[f]=w[f]||function(){(w[f].q=w[f].q||[])
+      .push(arguments);},l=d.createElement(e),l.async=1,l.src=u,
+      n=d.getElementsByTagName(e)[0],n.parentNode.insertBefore(l,n);})
+      (window,document,'script','https://assets.mailerlite.com/js/universal.js','ml');
+      ml('account', '486257');
+  </script>
+  <!-- End MailerLite Universal -->
+
+  </head>
 <body>
 
     <nav class="navbar fixed-top navbar-expand-lg navbar-light" >
@@ -24,10 +34,10 @@
                     <a class="nav-link" href="#">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Features</a>
+                    <a class="nav-link" href="#features-section">Features</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" href="#">Contact</a>
+                    <a class="nav-link active" href="#contact-us">Contact</a>
                 </li>
               
             </ul>
@@ -43,7 +53,7 @@
 
           <h1>Rx Performance & Market <br />Intelligence Platform</h1>
           <p>Infer actionable insights from prescription data</p>
-          <button type="button" class="btn btn-primary btn-lg">Book a demo</button>
+          <a href="#contact-us" role="button" class="btn btn-primary btn-lg">Book a demo</a>
         </div>
 
         <img src="gallery/MacBookPro16-inchFront.png" alt="screen" style="width: 65%;">
@@ -100,7 +110,7 @@
 
    
     
-    <div class="features-section">
+    <div class="features-section" id="features-section">
 
         <h1><span class="grey-highlighter">Define or choose relevant metrics</span> to evaluate Rx performance</h1>
 
@@ -175,7 +185,7 @@
             <img id="image-2" src="gallery/coverage_per-capita.svg" alt="coverage & per-capita" style="max-height: 60vh; max-width: 40vw;">
             <img id="image-3" src="gallery/prescriberloyalty.svg" alt="prescriber loyalty" style="max-height: 50vh;">
             <img id="image-4" src="gallery/specialtydistribution.svg" alt="specialty" style="max-height: 50vh;">
-            <!-- <img id="image-5" src="" alt="Co-prescriptions" style="max-height: 50vh;"> -->
+            <img id="image-5" src="gallery/co-rx.svg" alt="co-rx" style="max-height: 50vh; max-width: 40vw;">
           </div>
     
         </div>
@@ -201,8 +211,8 @@
           
           <div class="feature-description">
 
-            <h1><span class="grey-highlighter">Corporate to brand</span> performance</h1>
-            <p class="corp-to-brand">Get a top-level view of your corporate & business-unit performance to identify
+            <h1><span class="grey-highlighter">Examine micro-level</span> performance</h1>
+            <p class="corp-to-brand" style="width: 40vw;">Get a top-level view of your corporate & business-unit performance to identify
               strengths, weaknesses, opportunities & threats. Do a further deep-dive analysis
               using our platform to evaluate therapy, molecule or brand performance.
             </p>
@@ -210,7 +220,7 @@
           </div>
 
           <div class="image-illustration">
-            <img src="gallery/peerperformance.png" alt="Peer Performance">
+            <img src="gallery/rxpivot.svg" alt="Peer Performance">
           </div>
           
         </div>
@@ -231,12 +241,29 @@
     
     </div>
 
-    <div class="contact-us">
+    <div class="contact-us" id="contact-us">
       <h1><span class="grey-highlighter">Contact us</span> to know more</h1>
       <p>Discover our product's capablities and uncover how it can benefit you</p>
     </div>
+    <div class="ml-embedded" data-form="o5pkur"></div>
 
-    
+    <footer class="align-items-center py-3 my-4 ">
+      <div class="col-md-4 d-flex align-items-center">
+          <a href="" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+              <img src="gallery/cmarc_icon.png" alt="" style="height: 24px; width: 24px; margin-left: 25px;">
+          </a>
+          <span class="text-muted"> © 2025 C MARC. All rights reserved.</span>
+      </div>
+      <!-- <ul class="nav col-md-4 justify-content-end list-unstyled d-flex" style="margin-right: 3%;">
+          <li class="ms-3">
+              <span class="text-muted">Follow us on </span>
+              <a href="https://www.linkedin.com/company/cmarc/" target="_blank">
+                  <i class="fab fa-linkedin-in"></i>
+              </a>
+          </li>
+      </ul> -->
+  </footer>
+
     <script>
       function show(image) {
           /* Access image by id and change 
@@ -247,6 +274,7 @@
           if (image == "image-1"){
             document.getElementById("image-1").style.display = "block";
 
+            document.getElementById("image-5").style.display = "none";
             document.getElementById("image-4").style.display = "none";
             document.getElementById("image-3").style.display = "none";
             document.getElementById("image-2").style.display = "none";
@@ -254,7 +282,8 @@
 
           else if (image == "image-2"){
             document.getElementById("image-2").style.display = "block";
-
+            
+            document.getElementById("image-5").style.display = "none";
             document.getElementById("image-4").style.display = "none";
             document.getElementById("image-3").style.display = "none";
             document.getElementById("image-1").style.display = "none";
@@ -262,18 +291,29 @@
 
          else if (image == "image-3"){
             document.getElementById("image-3").style.display = "block";
-
+            
+            document.getElementById("image-5").style.display = "none";
             document.getElementById("image-4").style.display = "none";
             document.getElementById("image-2").style.display = "none";
             document.getElementById("image-1").style.display = "none";
           }
-          else{
+          else if (image == "image-4"){
             document.getElementById("image-4").style.display = "block";
 
+            document.getElementById("image-5").style.display = "none";
             document.getElementById("image-3").style.display = "none";
             document.getElementById("image-2").style.display = "none";
             document.getElementById("image-1").style.display = "none";
           }
+          else{
+            document.getElementById("image-5").style.display = "block";
+
+            document.getElementById("image-4").style.display = "none";
+            document.getElementById("image-3").style.display = "none";
+            document.getElementById("image-2").style.display = "none";
+            document.getElementById("image-1").style.display = "none";
+          }
+          
           
           
       }
