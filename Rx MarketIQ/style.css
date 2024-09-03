@@ -8,7 +8,7 @@
 
 :root{
     
-    --clr-primary: #FFFF;;
+    --clr-primary: #FFFF;
     --clr-secondary: #B2B2B4;
     --clr-grey:#D9D9D9;
    
@@ -130,6 +130,7 @@ nav{
 .features-section > h1{
    
     height: 20vh;
+    padding-top: 3%;
 
     text-align: center;
     align-content: center; /*vertically aligns the text in the h1 box*/
@@ -151,6 +152,7 @@ nav{
 
 .accordion{
     width: 75%;
+    margin-top: 5%;
     /* border: 2px solid red; */
 
     margin-left: 20%;
@@ -202,7 +204,7 @@ nav{
 
     /* border-radius: 15px; */
     margin: auto;
-
+    
     padding: 3%;
 
 
