@@ -9,10 +9,12 @@
 :root{
     
     --clr-primary: #FFFF;
-    --clr-secondary: #B2B2B4;
+    --clr-secondary: #aeb2ca;
+    /* --clr-secondary: #B2B2B4; */
     --clr-grey:#D9D9D9;
-   
+    --clr-primary-background:#10131C;
     --clr-secondary-background: #002060;
+
     background-color: #10131C;
 
 }
@@ -40,13 +42,8 @@ img{
     display: block;
 }
 
-nav{
-    position: fixed;
-    left: 0;
-    top: 3%;
-    width: 100%;
-    
-}
+/* Bootstrap 5 navbar design code -- STARTS HERE -- */
+
 .logo-image{
     height: 50px;
     margin-left: 3%;
@@ -57,8 +54,20 @@ nav{
     
 }
 
+.navbar-light .container-fluid .navbar-toggler-icon {
+    background-image:url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='5' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");  
+}
+.navbar-light .container-fluid .navbar-toggler {
+    border: none;
+}
+
+/* Bootstrap 5 navbar design code -- ENDS HERE -- */
+
+
+/* Hero section design code -- STARTS HERE -- */
+
 .hero-section{
-    height: 70dvh;
+    height: 75vh;
     background: linear-gradient(180deg, #000 0%, #59606F 100%);
 
     color: var(--clr-primary);
@@ -66,23 +75,26 @@ nav{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+    /* Flexbox property used to split in two broad sections: 
+    (1a) Title + sub-title
+    (1b) Product display screen
+
+    (2) Subscriber logo slider
+    */
 }
 
-.hero-section-grid{
-    
+.hero-section-grid{ 
     display: grid;
     grid-template-columns: 50% 50%;
     align-items: center;
-
     margin: auto 0;
-    
 
+    /* Hero section: the grid contains the content & product display screen image */
 }
 
 .hero-section-content{
-    
-    text-align: center;
-    
+    text-align: center; /* To ensure the text in the title & sub-title are center aligned*/
 }
 
 .hero-section-content h1{
@@ -123,9 +135,14 @@ nav{
     
 }
 
+/* Hero section design code -- ENDS HERE -- */
+
+
+/* Features section design code -- STARTS HERE -- */
+
 .features-section{
-    background-color: #10131C;
-    color: white;
+    background-color: var(--clr-primary-background);
+    color: var(--clr-primary)
 }
 .features-section > h1{
    
@@ -137,30 +154,29 @@ nav{
     align-content: center; /*vertically aligns the text in the h1 box*/
 }
 
-.grey-highlighter{
+/* .grey-highlighter{
     text-decoration: underline;
     color: var(--clr-secondary);
-}
+} */
 
 .feature-image-container{
     display: grid;
     grid-template-columns: 1fr 1fr;
-
-    /* background-color: #10131C; */
-    background-color: #10131C;
+    background-color: var(--clr-primary-background);
     color: var(--clr-primary);
+    
+    /*grid is used to split the containers in two:
+    one grid containing the image and the other containing the description/accordion */
 }
 
 .accordion{
     width: 75%;
     margin-top: 5%;
-    /* border: 2px solid red; */
-
     margin-left: 20%;
-    
 }
+
 .accordion-item{
-    background: #10131C;
+    background: var(--clr-primary-background);
     color: var(--clr-primary);
 }
 .accordion-body{
@@ -174,7 +190,7 @@ nav{
 }
 .accordion-button:not(.collapse){
     color: inherit;
-    background: #10131C;
+    background: var(--clr-primary-background);
 }
 
 .accordion .accordion-item {
@@ -201,13 +217,9 @@ nav{
     backdrop-filter: blur( 2px );
     -webkit-backdrop-filter: blur( 2px );
     border-radius: 15px;
-    /* border: 1px solid rgba( 255, 255, 255, 0.18 ); */
-
-    /* border-radius: 15px; */
-    margin: auto;
     
+    margin: auto;
     padding: 3%;
-
 
 }
 
@@ -220,8 +232,14 @@ nav{
 }
 
 .feature-description p {
-    font-size: 1.4rem;
+    font-size: 1.05rem;
+    color: var(--clr-secondary);
+    width: 85%;
+    margin: auto;
     
+}
+.feature-description h1{
+    font-size: 3rem;
 }
 .feature-description .corp-to-brand {
     text-align: center;
@@ -250,14 +268,19 @@ nav{
     display: grid;
     grid-template-columns: 45% 55%;
 
-    width: 55%;
-    margin: 3% auto;
+    width: 50%;
+    justify-items: center;
+    margin-top: 5%;
+    /* margin: 3% auto; */
 }
 
 .spreadsheet-description{
     width: 60%;
-    margin: 5% auto;
+    margin-bottom: 5%;
+    /* margin: 5% auto; */
 }
+
+/* Features section design code -- ENDS HERE -- */
 
 .contact-us{
     max-height: 50vh;
@@ -267,6 +290,7 @@ nav{
 
 .contact-us > p{
     font-size: 1.5rem;
+    color: var(--clr-secondary)
 }
 
 .mobile{
@@ -292,6 +316,10 @@ nav{
 
     .hero-section-content{
         margin: 10% auto;
+    }
+
+    .hero-section-content h1{
+        font-size: 2rem;
     }
 
     #features-section > h1{
@@ -354,23 +382,26 @@ nav{
     .peer-performance-mobile > h1{
         margin-bottom: 5%;
     }
+
+    .micro-level-performance .feature-description p{
+        margin-bottom: 10%;
+    }
+
     .spreadsheet-images > img{
         display: none; 
     }
 
     .spreadsheet-description > h1{
         margin-bottom: 10%;
+        font-size: 2.75rem;
     }
 
     .contact-us{
         max-width: 80%;
-        
-    }
-
-    .contact-us{
         margin: auto;
         
     }
+
 
     footer img{
         display: none;
