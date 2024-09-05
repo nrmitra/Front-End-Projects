@@ -123,7 +123,7 @@ nav li:hover .dropdown__menu{
 }
 
 .hero{
-    height: 70dvh;
+    height: 70vh;
     background: linear-gradient(180deg, #002060 0%, #59606F 100%);
 
     display: flex;
@@ -197,7 +197,7 @@ img:hover{
 
 
 .about-us{
-    height: 65dvh;
+    height: 65vh;
     
     display: flex;
     flex-direction: column;
@@ -248,7 +248,7 @@ img:hover{
 
 .steps{
     background-color: var(--clr-secondary-background);
-    height: 65dvh;
+    height: 65vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -296,11 +296,10 @@ img:hover{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 45dvh;
+    height: 45vh;
 
     margin-bottom: 5%;
 
-    /* border: 2px solid green; */
 }
 
 .our-reach-title{
@@ -821,7 +820,36 @@ figcaption{
     margin: auto 0;
 }
 
+
+
 @media (max-width: 650px){
+
+    .service-methodology{
+        min-height: 50vh;
+        /* display: none; */
+
+        margin: 5% auto;
+        justify-content: start;
+        
+        
+    }
+    
+    .our-reach .reach-stats {
+        min-height: 70vh;
+        border: 2px solid red;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .testimonials {
+        
+        border: 2px solid green;
+       
+    }
+    .affiliations img{
+        min-height: 35vh;
+        min-width: 70vw;
+    }
 
     .our-history-wrapper{
         display: flex;
@@ -921,11 +949,11 @@ figcaption{
     }
     .about-us h1{
         margin-top: 8%;
-        font-size: 1.75rem;
+        font-size: 2rem;
     }
 
     .about-us p{
-        font-size: 1.1rem;
+        font-size: 1rem;
         margin: 5% auto;
     }
 
@@ -949,7 +977,9 @@ figcaption{
     .service-methodology h1{
         font-size: 1.3rem;
        
+       
     }
+
 
 
     .reach-stats{
@@ -961,6 +991,12 @@ figcaption{
     width: 80%;
    }
 
+   /* .desktop{
+    display: none;
+   } */
+
 
 
 }
+
+
