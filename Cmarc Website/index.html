@@ -8,6 +8,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+
     <!-- owl carousel css links -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -30,6 +31,8 @@
 </head>
 <body>
     <header>
+
+        <!-- Bootstrap 5 navbar code -- STARTS HERE -- -->
 
         <nav class="navbar fixed-top navbar-expand-lg navbar-light" >
             <div class="container-fluid">
@@ -72,10 +75,15 @@
               </div>
             </div>
           </nav>
+        
+        <!-- Bootstrap 5 navbar code -- ENDS HERE -- -->
 
 
     </header>
     <main>
+
+        <!-- Hero section code -- STARTS HERE -- -->
+
         <div class="hero">
 
             <div class="hero-text-button">
@@ -84,23 +92,7 @@
                 <!-- <p>since 1977</p> -->
                 
                 <div class="ml-embedded" data-form="kiTDFN"></div>
-                <!-- <form style="margin-top: 8%;" action="https://formsubmit.co/nrm@cmarcindia.in" method="POST">
-                    
-                    <div class="mb-3">
-                      <label for="exampleInputEmail1" class="form-label" style="font-size: .90rem; font-style: italic;">
-                        Stay informed by subscribing to our monthly industry newsletter.
-                      </label>
-                      <div class="d-flex" style="gap: 1.1rem;">
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Your email" required>
-                        <button type="submit" class="btn btn-primary">Submit</button>
-
-                      </div>
-                      
-                      
-                    </div>
-                    
-                </form> -->
-                <!-- <button type="button" class="demo-button">Book a Demo</button> -->
+                
             </div>
 
             <div class="logos">
@@ -151,17 +143,26 @@
             </div>
         </div>
 
+        <!-- Hero section code -- ENDS HERE -- -->
+
+
+        <!-- About us section code -- STARTS HERE -- -->
+
         <div class="about-us">
             <h1>We are a <span class="blue-highlight">research-based healthcare
-                <br />consultancy</span> organisation</h1>
+                consultancy</span> organisation</h1>
             <p>Since 1977, we continue to provide strategic solutions on key strategic marketing issues and advising corporates on
                 sales-force strategies, portfolio development and optimization through existing products & new launches
                 to increase prescriber coverage and improve prescriber productivity - through our flagship service -
                 Continuous Prescription Research - CPR™
             </p>
             <a href="ourteam.html" class="btn btn-primary btn-lg" role="button" >More About Us</a>
-            <!-- <button type="button" class="more-about-us">More About Us</button> -->
+
         </div>
+
+        <!-- About us section code -- ENDS HERE -- -->
+
+        <!-- 3 Steps section code -- STARTS HERE -- -->
 
         <div class="steps" id="steps">
             <h1>Steps involved in our flagship <span class="orange-highlight">CPR™</span> service</h1>
@@ -184,10 +185,16 @@
             </div>
         </div>
 
+        <!-- 3 Steps section code -- ENDS HERE -- -->
+
+        <!-- CPR PROCESS section code -- STARTS HERE -- -->
+
         <div class="service-methodology">
             <h1>How our <span class="blue-highlight">CPR™</span> service works</h1>
             <img src="gallery/cpr-methodology.gif" alt="cpr-process">
         </div>
+
+        <!-- CPR PROCESS section code -- ENDS HERE -- -->
 
         <div class="our-reach">
             <h1 class="our-reach-title">Our <span class="blue-highlight">CPR™ panel</span></h1>
@@ -328,15 +335,17 @@
                 autoplayHoverPause:true,
                 responsive:{
                     0:{
-                        items:1,
-                        singleItem: true
+                        items:1.2,
+                        margin: 5,
+                        // singleItem: true
                     },
-                    800:{
-                        items:3,
-                        singleItem: true,
+                    768:{
+                        items:3.2,
+                        margin: 10,
+                        // singleItem: true,
                         
                     },
-                    1000:{
+                    1024:{
                         items:3
                     }
                 }
