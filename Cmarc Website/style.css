@@ -53,8 +53,8 @@ img{
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;;
     background-color: transparent;
 
-    min-width: 35vw;
-    max-width: 45vw;
+    /* min-width: 35vw;
+    max-width: 45vw; */
      
 }
 
@@ -270,6 +270,8 @@ img:hover{
 
 /* CPR PROCESS section code --- ENDS HERE --- */
 
+/* CPR PANEL section code --- STARTS HERE --- */
+
 .our-reach{
     display: flex;
     flex-direction: column;
@@ -278,13 +280,13 @@ img:hover{
     min-height: 45vh;
 
     margin-bottom: 5%;
+/*NOTE: this is only for the desktop view*/
 
 }
 
 .our-reach-title{
     margin: auto 0;
     font-size: 2.5rem;
-    /* border: 2px solid blue; */
 
 }
 
@@ -292,10 +294,9 @@ img:hover{
 .reach-stats{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    
     width: 100%;
+    justify-content: center;
 
-    /* border: 2px solid red; */
 }
 
 .group h2,
@@ -304,18 +305,17 @@ img:hover{
 }
 
 .figure-reach{
-    
     text-align: center;
     font-size: 3.75rem;
-
     color: var(--clr-blue);
 }
 
+/* CPR PANEL section code --- ENDS HERE --- */
 
+/* TESTIMONIAL section code --- STARTS HERE --- */
 
 .testimonials{
     height: 60vh;
-    /* background-color: green; */
     display: flex;
     flex-direction: column;
     /* justify-content: center; */
@@ -323,56 +323,8 @@ img:hover{
 }
 
 .testimonials h1{
-    /* border: 2px solid brown; */
-    /* margin: 5% auto; */
     margin-bottom: 3%;
 }
-
-/* .testimonial-carousel{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    justify-items: center;
-
-    border: 2px solid black;
-    height: 80%;
-}
-
-
-
-.user-details{
-    display: grid;
-    grid-template-columns: 20% 80%;
-}
-
-.user-img{
-    height: 72px;
-    width: 72px;
-    border-radius: 50%;
-    display: inline-block;
-}
-
-.user-feedback{
-    font-style: italic;
-}
-
-.card{
-    width: 80%;
-    border-radius: 15px;
-    background:linear-gradient(90deg, #002060 0%, #59606F 100%);
-    color: white;
-    height: 80%;
-    
-}
-.card h2{
-    text-align: left;
-    margin-left: 3%;
-}
-
-.card p{
-    margin-left: 3%;
-    text-align: left;
-    font-size: .85rem;
-} */
 
 .testimonial-carousel{
     /* border: 2px solid black; */
@@ -392,8 +344,10 @@ img:hover{
 }
 
 .user-img{
-    height: 75px;
-    width: 75px;
+    height: 90%;
+    width: 90%;
+    /* height: 75px;
+    width: 75px; */
     border-radius: 50%;
     display: inline-block;
 }
@@ -460,7 +414,7 @@ img:hover{
 }
 
 .affiliations img{
-    width: 40%;
+    width: 50%;
 }
 
 
@@ -799,9 +753,16 @@ figcaption{
     margin: auto 0;
 }
 
-
+/* for MOBILE SCREENS */
 
 @media (max-width: 700px){
+
+    .navbar-nav .dropdown-menu{
+
+        min-width: 35vw;
+        max-width: 45vw;
+         
+    }
 
     .service-methodology{
         min-height: 60vh;
@@ -816,19 +777,24 @@ figcaption{
         font-size: 2rem;
         
     }
+    .our-reach{
+        margin-bottom: 0px;
+
+    }
     
     .our-reach .reach-stats {
         min-height: 70vh;
-        border: 2px solid red;
         display: flex;
         flex-direction: column;
     }
 
-    .testimonials {
-        
-        border: 2px solid green;
-       
+
+    .testimonials h1{
+        /* border: 2px solid brown; */
+        margin: 5% auto;
     }
+
+    
     .affiliations img{
         min-height: 35vh;
         min-width: 70vw;
@@ -958,17 +924,16 @@ figcaption{
         display: none;
     }
 
-   
-
-
-
     .reach-stats{
         display: grid;
        
     }
 
     .card-local{
-        width: 80%
+        
+        min-height: 45vh;
+        min-width: 45vw;
+        
        }
 
    /* .desktop{
@@ -978,5 +943,83 @@ figcaption{
 
 
 }
+
+/* for other mobile SCREENS */
+@media (min-width: 601px) and (max-width: 767px) {
+    .testimonials{
+        min-height: 75vh;
+    }
+    .card-local{
+        
+        min-height: 50vh;
+        min-width: 50vw;
+        max-width: 70vw;
+    
+    
+    }
+    .affiliations img{
+        min-height: 35vh;
+        min-width: 60vw;
+        }
+}
+
+
+
+/* for TABLET SCREENS */
+@media (min-width: 768px) and (max-width: 1000px) {
+
+    
+    .card-local{
+        
+        height: 45vh;
+        width: 50vw;
+        
+       }
+    
+    .affiliations img{
+    min-height: 30vh;
+    min-width: 45vw;
+    }
+
+
+}
+
+/* for OTHER SCREEN SIZES */
+@media (min-width: 1001px) and (max-width: 1100px) {
+
+    
+    .card-local{
+        
+        height: 45vh;
+        width: 40vw;
+        
+       }
+
+       .affiliations img{
+        min-height: 20vh;
+        min-width: 35vw;
+        }
+
+
+}
+
+@media (min-width: 1101px) and (max-width: 1300px) {
+
+    
+    .card-local{
+        
+        height: 50vh;
+        width: 40vw;
+        
+       }
+
+    .affiliations img{
+    min-height: 25vh;
+    min-width: 40vw;
+    }
+
+
+}
+
 
 
