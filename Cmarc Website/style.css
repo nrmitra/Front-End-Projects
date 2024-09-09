@@ -153,7 +153,7 @@ img:hover{
     flex-grow: 0; /* is this needed? */
     flex-shrink: 0;
     gap: 1.5em;
-    animation: 22s slide infinite linear;
+    animation: 20s slide infinite linear;
     /* border: 2px solid red; */
     margin-top: auto; /* Push it and following elements to the bottom */
     
@@ -587,8 +587,8 @@ figcaption{
    
 }
 
-.our-history-wrapper img:hover,
-.service-methodology img:hover{
+.our-history-wrapper img:hover
+{
     transform: none;
 }
 
