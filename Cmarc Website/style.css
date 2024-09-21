@@ -13,6 +13,7 @@
     --clr-blue:#293A8C;
     --clr-orange:#FF8182;
     --clr-secondary-background: #002060;
+    --clr-hamburger-icon: #604000;
 
 }
 
@@ -53,8 +54,8 @@ img{
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;;
     background-color: transparent;
 
-    /* min-width: 35vw;
-    max-width: 45vw; */
+    min-width: 35vw;
+    max-width: 45vw;
      
 }
 
@@ -64,7 +65,7 @@ img{
 }
 
 .navbar-light .container-fluid .navbar-toggler-icon {
-    background-image:url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='5' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    background-image:url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 129, 130, 1)' stroke-width='5' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
     border: none;
 
 }
@@ -757,11 +758,23 @@ figcaption{
 
 @media (max-width: 700px){
 
+    .navbar-nav{
+        background: linear-gradient(180deg, #002060 0%, #59606F 100%);
+        min-width: 35vw;
+        max-width: 50vw;
+
+        border-radius: 10px;
+        text-align: center;
+
+        color: var(--clr-orange);
+    }
+
     .navbar-nav .dropdown-menu{
 
         min-width: 35vw;
-        max-width: 45vw;
-         
+        max-width: 50vw;
+        background-color: var(--clr-secondary-background);
+        
     }
 
     .hero-text-button h1{
@@ -1015,6 +1028,10 @@ figcaption{
         margin-bottom: -35px !important;
     }
     
+    .ml-form-embedContent > p{
+        display: none;
+
+    }
 
 
    /* .desktop{
@@ -1055,8 +1072,9 @@ figcaption{
 
     .navbar-nav .dropdown-menu{
 
-        min-width: 15vw;
-        max-width: 25vw;
+        min-width: 20vw;
+        max-width: 30vw;
+        background-color: var(--clr-secondary-background);
          
     }
 
@@ -1095,7 +1113,6 @@ figcaption{
         max-height: 35vh;
     }
 
-
 }
 
 /* for OTHER SCREEN SIZES */
@@ -1109,10 +1126,20 @@ figcaption{
         
        }
 
-       .affiliations img{
-        min-height: 20vh;
-        min-width: 35vw;
-        }
+    .affiliations img{
+    min-height: 20vh;
+    min-width: 35vw;
+    }
+
+    .services-content{
+
+        height: 60vh;
+    }
+
+    .services-description{
+        margin: auto;
+    }
+
 
 
 }

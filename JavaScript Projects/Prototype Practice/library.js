@@ -32,16 +32,20 @@ function viewBooks() {
     const outputDiv = document.getElementById("results-container");
     const list = document.createElement("ul");
 
-    
+    let libraryContent = "";
     for(let i = 0; i < myLibrary.length ;i++){
         const listItem = document.createElement("li");
-        listItem.textContent = myLibrary[i].info();
-        list.appendChild(listItem);
+        libraryContent += myLibrary[i].info() + "<br />"
+
+        // listItem.textContent = myLibrary[i].info();
+        // list.appendChild(listItem);
         // document.getElementById('library-output').innerHTML = i;
 
     }
-    
-    outputDiv.appendChild(list);
+    // outputDiv.innerHTML = myLibrary[0].info();
+    outputDiv.innerHTML = libraryContent;
+   
+    // outputDiv.appendChild(list);
 };
 
 
