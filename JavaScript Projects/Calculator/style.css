@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    max-height: 50vh;
+    max-width: 20vw;
+    
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+
+}
+.output-screen{
+    background-color: darkgray;
+    height: 5vh;
+}
+
+.input-row{
+    display: flex;
+    background-color: black;
+    color: white;
+
+}
+
+
+/* .operator-btn button{
+    background-color: orange;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+
+    color: white;
+    font-size: 1.5rem;
+    
+} */
+
+.number-btn button{
+    background-color: darkgrey;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+
+    color: white;
+    font-size: 1.5rem;
+}
+.operator-btn button{
+    background-color: orange;
+}
