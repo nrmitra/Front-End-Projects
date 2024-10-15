@@ -1,56 +1,31 @@
 const numberBtn = document.querySelectorAll(".number-btn");
-let numberVal = 0;
+let numberVal=Number(0);
 let ouputVal = 0;
 let output;
-let arr = [];
 
 const outputScreen = document.querySelector(".output-screen");
+
+function calculate(numberValue){
+    
+    return eval(numberValue);
+}
 
 numberBtn.forEach(
     btn => btn.addEventListener("click",function(e) {
         let buttonValue = e.target.value;
-        
 
-        if((buttonValue !== '+') && (buttonValue !== '-') && (buttonValue !== '*') && (buttonValue !== '/')){
-            numberVal = Number(numberVal + buttonValue);
-            outputScreen.innerHTML = Number(numberVal);
-            console.log(numberVal);
-
+        if (buttonValue == '='){
+            outputScreen.innerHTML = calculate(numberVal);
+            numberVal = Number(0);
         }
-        else {
-            if (arr.length == 0){
-                output = Number(0);
-            }
+        else{
+
             
-            arr.push(Number(numberVal));
-            if(buttonValue == '+'){
-                // ouputVal += numberVal;
-                
-                output = arr.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
-                console.log(output);
-                outputScreen.innerHTML = output;
-        
-            }
-            else if (buttonValue == '*'){
-                console.log("inside multiplication brackets");
-                
-                //if(outputScreen.textContent != 0){
-                // let product = outputScreen.textContent;
-                let product = output;
-                product *= arr[arr.length - 2];
-                outputScreen.innerHTML = product;
-
-                //}
-                
-                
-
-            }
-            numberVal = 0;
-            console.log(ouputVal);
-            console.log(arr);
+            numberVal = numberVal + buttonValue;
+            outputScreen.innerHTML = numberVal;
 
         }
-        console.log(arr);
+
         
     })
 
