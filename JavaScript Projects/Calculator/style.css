@@ -22,6 +22,9 @@ body{
 .output-screen{
     background-color: darkgray;
     height: 5vh;
+
+    display: flex;
+    justify-content: flex-end;
 }
 
 .input-row{
