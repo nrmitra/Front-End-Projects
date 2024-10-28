@@ -17,3 +17,24 @@
     7. How can you modify your async function to catch this error?
 */
 
+const fetchPokemon = () => {
+
+
+    return new Promise((resolve,reject) => {
+        setTimeout(()=>{
+            resolve({data:{name:"Pikachu", power: 20}});
+        },2000);
+    });
+
+};
+
+console.log("Program starting ...");
+
+const usePokemon = async () => {
+    const data = await fetchPokemon();
+    console.log(data);
+};
+
+usePokemon();
+console.log("Program complete!");
+
