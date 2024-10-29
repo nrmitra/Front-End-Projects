@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "inquirer": "^12.0.1",
+    "node-fetch": "^3.3.2"
+  },
+  "name": "pokemon-project",
+  "version": "1.0.0",
+  "description": "fetch pokemon info as per user inputs",
+  "main": "prompts.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Neel Mitra",
+  "license": "ISC",
+  "type": "module"
+}
