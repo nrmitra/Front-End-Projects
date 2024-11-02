@@ -1,0 +1,76 @@
+:root{
+    
+    --clr-background: #E36A6A;
+
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    /* margin:0; */
+    
+    max-height: 100vh;
+    background-color: var(--clr-background);
+}
+
+img{
+    max-width: 100%;
+    display: block;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 30% 70%;
+
+    border: 2px solid blue;
+    
+}
+
+.arti-items-container{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+   
+
+    /* border: 2px solid blue; */
+}
+
+.arti-item{
+    /* border: 2px solid black; */
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+    margin: 5% auto;
+    
+}
+
+.arti-item img{
+    width:100%;
+    height:100%;
+    object-fit:contain;
+}
+
+.arti-item :hover{
+    transform: scale(1.15,1.15);
+}
+
+.ganesh-idol{
+    
+    justify-items: center;
+}
+
+/* Style for the cloned image */
+.clonedImage {
+    position: absolute;
+    pointer-events: none; /* Prevents cloned image from blocking clicks */
+    opacity: 0.7;
+    transform: translate(-50%, -50%); /* Centers the image on the cursor */
+}

@@ -14,3 +14,22 @@
           to access the parsed JSON
 */
 
+const result = async () => {
+
+   const response = await fetch("https://pokeapi.co/api/v2/pokemon/pikachu");
+   response.json().then((pokemonObject) => {
+      console.log(pokemonObject.sprites.other["official-artwork"].front_default);
+    });
+
+}
+
+result();
+
+
+// import fetch from "node-fetch";
+
+// fetch("https://pokeapi.co/api/v2/pokemon/pikachu")
+//   .then((response) => response.json())
+//   .then((pokemonObject) => {
+//     console.log(pokemonObject.sprites.other["official-artwork"].front_default);
+//   });
