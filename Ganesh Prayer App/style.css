@@ -15,7 +15,7 @@
 body{
     /* margin:0; */
     
-    max-height: 100vh;
+    /* max-height: 100vh; */
     background-color: var(--clr-background);
 }
 
@@ -25,17 +25,16 @@ img{
 }
 
 .container{
+    height: 100vh;
     display: grid;
     grid-template-columns: 30% 70%;
-
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
     
 }
 
 .arti-items-container{
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
-   
 
     /* border: 2px solid blue; */
 }
@@ -65,6 +64,12 @@ img{
 .ganesh-idol{
     
     justify-items: center;
+}
+.sub-title{
+    color: white;
+    font-size: 4rem;
+    text-shadow: 3px 3px black;
+    
 }
 
 /* Style for the cloned image */

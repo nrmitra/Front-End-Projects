@@ -10,7 +10,7 @@ let clonedImage = null; // Track the cloned image
 let followCursor = null; // Track the follow function
 
 
-pujaLampImage.addEventListener("click", (event) => {
+pujaLampImage.addEventListener("click", () => {
 
     // If a cloned image already exists, remove it
     if (clonedImage) {
@@ -33,21 +33,13 @@ pujaLampImage.addEventListener("click", (event) => {
     
 
     //Function to update cloned image position to follow the cursor
-    const followCursor = (e) => {
+    followCursor = (e) => {
         clonedImage.style.left = e.pageX + 'px';
         clonedImage.style.top = e.pageY + 'px';
     };
 
     // Add mousemove event listener to update cloned image position
     document.addEventListener("mousemove", followCursor);
-
-    
-
-    // Optional: Remove the cloned image when clicking again
-    // clonedImage.addEventListener("click", () => {
-    //     document.removeEventListener("mousemove", followCursor);
-    //     clonedImage.remove();
-    // });
 
     
 })
