@@ -25,6 +25,8 @@ pujaLampImage.addEventListener("click", () => {
         //clone the original image
         clonedImage = pujaLampImage.cloneNode(true);
         clonedImage.classList.add("clonedImage");
+        clonedImage.width = "200";
+        clonedImage.height = "200";
 
         //Append the cloned image to the body
         document.body.appendChild(clonedImage);
@@ -48,7 +50,10 @@ pujaLampImage.addEventListener("click", () => {
 
 flowerImage.addEventListener("click",() => {
 
-    document.getElementById("arti-flower-group").style.display="block";
+    document.getElementById("arti-flower-group").style.display="inline-block";
+    document.getElementById("sub-title").style.position="relative";
+    document.getElementById("sub-title").style.bottom ="18%";
+    
     gsap.from('.arti-flower-group',{duration: 2,y:'-400%'});
 
 })

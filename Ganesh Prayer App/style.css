@@ -68,10 +68,14 @@ img{
 
 .arti-flower-group{
     display: none;
-    position: absolute;
+    position: relative;
+    bottom:15%;
+    
+    /* position: absolute;
     right: 18%;
-    bottom: 20%;
-    z-index: 1;
+    bottom: 20%; */
+
+    /* z-index: 1; */
    
 }
     
