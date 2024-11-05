@@ -65,6 +65,16 @@ img{
     
     justify-items: center;
 }
+
+.arti-flower-group{
+    display: none;
+    position: absolute;
+    right: 18%;
+    bottom: 20%;
+    z-index: 1;
+   
+}
+    
 .sub-title{
     color: white;
     font-size: 4rem;

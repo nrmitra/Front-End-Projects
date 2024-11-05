@@ -1,5 +1,6 @@
 const playImage = document.getElementById("pujaBell");
 const audioPlayer = document.getElementById("audioPlayer");
+const flowerImage = document.getElementById("pujaFlowers");
 
 playImage.addEventListener("click", () => {
     audioPlayer.play();
@@ -44,3 +45,10 @@ pujaLampImage.addEventListener("click", () => {
     
 })
 
+
+flowerImage.addEventListener("click",() => {
+
+    document.getElementById("arti-flower-group").style.display="block";
+    gsap.from('.arti-flower-group',{duration: 2,y:'-400%'});
+
+})
