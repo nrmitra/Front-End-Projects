@@ -1,0 +1,59 @@
+:root{
+    --clr-background: #2C6399;
+}
+
+*,
+*::before,
+*::after{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+}
+
+.container{
+    background-color: var(--clr-background);
+    width: 50%;
+    height: 70%;
+    
+    margin: 5% auto ;
+    
+    display: flex;
+
+}
+
+
+
+.column{
+    
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.circle{
+    
+    background-color: antiquewhite;
+    width: 80%;
+    height: 80%;
+
+    margin-top: 10%;
+
+    border-radius: 50%;
+    border: 2px solid black;
+
+    flex: 1;
+}
+
+.circle:nth-child(6){
+    margin-bottom: 10%;
+
+}
