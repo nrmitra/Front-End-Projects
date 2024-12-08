@@ -82,6 +82,7 @@ columnSelection.forEach((div) => {
 
                 if(checkFourCells(matrix)){
                     alert(`${currentPlayer} has won!`)
+                    location.reload(true)
                 }
 
                 break;

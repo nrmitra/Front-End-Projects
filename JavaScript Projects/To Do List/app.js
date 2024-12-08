@@ -8,7 +8,7 @@ const list = document.querySelector('.grocery-list');
 const clearBtn = document.querySelector('.clear-btn');
 
 // edit option
-let ediElement;
+let editElement;
 let editFlag = false;
 let editID = "";
 
