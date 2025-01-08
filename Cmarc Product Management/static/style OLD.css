@@ -20,7 +20,7 @@ body{
     width: 100vw;
 
     display: flex;
-    /* flex-direction: column; */
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 
@@ -40,22 +40,14 @@ h1{
 }
 
 .input-container{
-    width: 80vw;
+    width: 70vw;
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 30% 70%;
     justify-items: center;
-
-}
-
-.grid-1{
-
-    width: 60%;
-    
 }
 
 .grid-2{
-
-    width: 90%;
+    width: 40%;
     
 }
 
@@ -67,37 +59,11 @@ h1{
     margin-bottom: 5%;
 }
 
-.input-field-container-type-2{
-    /* border: 2px solid black; */
-    display: flex;
-    /* flex-direction: column; */
-
-    margin-bottom: 5%;
-}
-
-.input-field-container-type-2 #yes-no-list{
-    margin-left: 2.5%;
-}
-
-.input-field-container-type-2 #fmnth{
-    width: 30%;
-    margin-left: 2.5%;
-}
-
 #specialties{
     height: 15vh;
 }
 
-.button-container {
-    
-    margin-left: 100%;
-    margin-top: 10%;
-    display: flex; /* Flexbox for centering */
-    justify-content: center; /* Center the button horizontally */
-    width: 100%; /* Ensure the container spans full width */
-}
-
-#submit {
-    
-    padding: 1.75% 3.5%;
+#submit{
+    margin-top: 2.5%;
+    padding: .5% 1.2% .5% 1.2%;
 }

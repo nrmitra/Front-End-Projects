@@ -4,8 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>C MARC : PRODUCT MANAGEMENT APPLICATION</title>
-
-    <link rel="stylesheet" href="style.css">
     
     <!-- Link to the CSS file -->
     <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}">
@@ -18,7 +16,7 @@
         <h1>C MARC : PRODUCT MANAGEMENT APPLICATION</h1>
         <form class="input-container" method ="post">
 
-            <!-- <div class="grid-1">
+            <div class="grid-1">
 
                 <div class="input-field-container">
                 
@@ -43,12 +41,12 @@
                 </div>
 
 
-            </div> -->
+            </div>
 
 
-            <div class="grid-1">
+            <div class="grid-2">
 
-                <div class="input-field-container-type-2">
+                <div class="input-field-container">
 
                     <label for="fmnth">FMNTH KEY:</label>
                     <input type="text" id="fmnth" name="fmnth">
@@ -77,58 +75,7 @@
                 </div>
 
             </div>
-
-            <div class="grid-2">
-
-            
-
-                <div class="input-field-container-type-2">
-    
-                    <label for="spcl_zone_brand_standing">Do you require zone-wise brand rx standing for each specialties? </label>
-                    <select id="yes-no-list" name="spcl_zone_brand_standing">
-                        <!-- <option value="BLANK" selected>choose an option</option> -->
-                        <option value="Yes">Yes</option>
-                        <option value="No" selected>No</option>
-                        
-                    </select>
-    
-                </div>
-
-                <div class="input-field-container-type-2">
-    
-                    <label for="category_molecule_standing">Do you require category-wise molecule rx standing? </label>
-                    <select id="yes-no-list" name="category_molecule_standing">
-                        <!-- <option value="BLANK" selected>choose an option</option> -->
-                        <option value="Yes">Yes</option>
-                        <option value="No" selected>No</option>
-                        
-                    </select>
-    
-                </div>
-
-                <div class="input-field-container-type-2">
-    
-                    <label for="molecule_brand_standing">Do you require molecule-wise brand rx standing for each molecules? </label>
-                    <select id="yes-no-list" name="molecule_brand_standing">
-                        <!-- <option value="BLANK" selected>choose an option</option> -->
-                        <option value="Yes">Yes</option>
-                        <option value="No" selected>No</option>
-                        
-                    </select>
-    
-                </div>
-
-
-
-            </div>
-
-            <div class="button-container">
-
-                <button id="submit">SUBMIT</button>
-
-            </div>
-
-            
+            <button id="submit">submit</button>
         </form>
     </div>
     
