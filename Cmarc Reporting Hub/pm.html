@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C MARC : PRODUCT MANAGEMENT APPLICATION</title>
+
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Link to the CSS file -->
+    <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}">
+    <!-- Link to the JavaScript file -->
+    <script src="{{ url_for('static', filename='dropdown.js') }}" defer></script>
+</head>
+<body>
+
+    <div class="container">
+        <h1>C MARC : PRODUCT MANAGEMENT APPLICATION</h1>
+        <form class="input-container" method ="post">
+
+            <!-- <div class="grid-1">
+
+                <div class="input-field-container">
+                
+
+                    <label for="specialties">Choose the required specialties:</label>
+                    <select name="specialties" id="specialties" multiple>
+                        <option value="CPR">CPR</option>
+                        <option value="GEN PHY">GEN PHY</option>
+                        <option value="CONS PHYS">CONS PHY</option>
+                        <option value="PAEDIA">PAEDIA</option>
+                        <option value="GYNAE">GYNAE</option>
+                        <option value="GEN SURG">GEN SURG</option>
+                        <option value="ORTHO">ORTHO</option>
+                        <option value="DERMAT">DERMAT</option>
+                        <option value="DIABETO">DIABETO</option>
+                        <option value="CARDIO">CARDIO</option>
+                        <option value="NEURO">NEURO</option>
+                        <option value="NRPHRO">NEPHRO</option>
+                        <option value="URO">URO</option>
+                    </select>
+    
+                </div>
+
+
+            </div> -->
+
+
+            <div class="grid-1">
+
+                <div class="input-field-container-type-2">
+
+                    <label for="fmnth">FMNTH KEY:</label>
+                    <input type="text" id="fmnth" name="fmnth">
+    
+                </div>
+    
+                <div class="input-field-container">
+    
+                    <label for="corporate-list">Select a corporate:</label>
+                    <select id="corporate-list" name="corporate">
+                        <option value="BLANK">choose an option</option>
+                        <!-- <option value="SUN PHARMA">SUN PHARMA</option>
+                        <option value="CIPLA" selected>CIPLA LTD</option>
+                        <option value="INTAS">INTAS</option>
+                        <option value="LUPIN">LUPIN</option> -->
+                    </select>
+    
+                </div>
+    
+                
+                <div class="input-field-container">
+    
+                    <label for="pmname">Enter the input file name:</label>
+                    <input type="text" id="pmname" name="pmname">
+    
+                </div>
+
+            </div>
+
+            <div class="grid-2">
+
+            
+
+                <div class="input-field-container-type-2">
+    
+                    <label for="spcl_zone_brand_standing">Do you require zone-wise brand rx standing for each specialties? </label>
+                    <select id="yes-no-list" name="spcl_zone_brand_standing">
+                        <!-- <option value="BLANK" selected>choose an option</option> -->
+                        <option value="Yes">Yes</option>
+                        <option value="No" selected>No</option>
+                        
+                    </select>
+    
+                </div>
+
+                <div class="input-field-container-type-2">
+    
+                    <label for="category_molecule_standing">Do you require category-wise molecule rx standing? </label>
+                    <select id="yes-no-list" name="category_molecule_standing">
+                        <!-- <option value="BLANK" selected>choose an option</option> -->
+                        <option value="Yes">Yes</option>
+                        <option value="No" selected>No</option>
+                        
+                    </select>
+    
+                </div>
+
+                <div class="input-field-container-type-2">
+    
+                    <label for="molecule_brand_standing">Do you require molecule-wise brand rx standing for each molecules? </label>
+                    <select id="yes-no-list" name="molecule_brand_standing">
+                        <!-- <option value="BLANK" selected>choose an option</option> -->
+                        <option value="Yes">Yes</option>
+                        <option value="No" selected>No</option>
+                        
+                    </select>
+    
+                </div>
+
+
+
+            </div>
+
+            <div class="button-container">
+
+                <button id="submit">SUBMIT</button>
+
+            </div>
+
+            
+        </form>
+    </div>
+    
+    
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Broad</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: green;
+        }
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+        }
+        .header {
+            background-color: #6FA0DD;
+            color: #FFFFFF;
+            padding: 10px;
+            text-align: left;
+            font-size: 1.5em;
+        }
+        table {
+            width: 100%;
+            margin-top: 20px;
+        }
+        td {
+            padding: 10px;
+            vertical-align: top;
+        }
+        td label {
+            font-size: 1em;
+            color: #0000FF;
+        }
+        td input {
+            width: calc(100% - 20px);
+            padding: 5px;
+            font-size: 1em;
+        }
+        .submit-btn {
+            background-color: #007BFF;
+            color: #FFFFFF;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1em;
+            cursor: pointer;
+        }
+        .submit-btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">Add Broad</div>
+        <form id="broadForm">
+            <table>
+                <tr>
+                    <td align="right">
+                        <label for="broadCode">Broad Code:</label>
+                    </td>
+                    <td align="left">
+                        <span id="broadCode" style="font-size: 1.2em; font-weight: bold;">BRD0001</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right">
+                        <label for="broadName">Broad Name:</label>
+                    </td>
+                    <td align="left">
+                        <input type="text" id="broadName" name="broadName" maxlength="30" placeholder="Enter Broad Name">
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right">
+                        <label for="remarks">Remarks:</label>
+                    </td>
+                    <td align="left">
+                        <input type="text" id="remarks" name="remarks" maxlength="50" placeholder="Enter Remarks">
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <button type="submit" class="submit-btn">Save Broad</button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

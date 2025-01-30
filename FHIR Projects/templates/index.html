@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enter Clinic Notes</title>
+</head>
+<body>
+    <h1>Enter the clinic notes:</h1>
+    <form action="success" method="get">
+
+        <label for="notes">Enter the details here</label>
+        <textarea rows="5" cols="35" id="notes" name="notes">Enter the details here!</textarea>
+        <br>
+        <input type="submit" value="submit">
+
+    </form>
+
+    <script>
+        FHIR.oauth2.authorize({
+            'client_id': 'c3fab227-64d3-498b-bcaf-023d7014a926',
+            'scope': 'PROVIDER.CREATE',
+            'redirect_url': 'https://127.0.0.1:5000/success.html'
+        });
+    </script>
+    
+</body>
+</html>
