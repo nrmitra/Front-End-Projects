@@ -25,6 +25,38 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
+    function getCorporateDropdownList(targetDiv){
+
+        const corporateDropdownList = document.createElement("select");
+        const corporateDropdownOptions = ["Corporate 1", "Corporate 2", "Corporate 3"];
+
+        corporateDropdownOptions.forEach(optionText => {
+            const option = document.createElement("option");
+            option.textContent = optionText;
+            option.value = optionText.toLowerCase().replace(/\s+/g, "_");
+            corporateDropdownList.appendChild(option);
+        });
+
+        targetDiv.appendChild(corporateDropdownList);
+
+    }
+
+    function getDivisionDropdownList(targetDiv){
+
+        divisionDropdownOptions = ["Division 1","Division 2","Division 3"]
+        const divisionDropdownList = document.createElement("select");
+
+        divisionDropdownOptions.forEach(optionText => {
+            const option = document.createElement("option");
+            option.textContent = optionText;
+            option.value = optionText.toLowerCase().replace(/\s+/g, "_");
+            divisionDropdownList.appendChild(option);
+        });
+
+        targetDiv.appendChild(divisionDropdownList)
+
+    }
+
     if (queryMenuList) queryMenuOptions(queryOptionsList, queryMenuList);
 
     if (mainMenuList) {
@@ -47,37 +79,21 @@ document.addEventListener("DOMContentLoaded", () => {
         const targetDiv = document.getElementById("user-inputs");
         const selectedOption = sessionStorage.getItem("headerTitle") || "";
 
-        const corporateDropdownList = document.createElement("select");
-        const corporateDropdownOptions = ["Corporate 1", "Corporate 2", "Corporate 3"];
 
         if (headerTitle) {
             headerTitle.textContent = selectedOption;
         }
 
         if (selectedOption === "Company Brand List" && targetDiv) {
-            console.log("Adding dropdown to inputresults.html");  // Debugging check
 
-            corporateDropdownOptions.forEach(optionText => {
-                const option = document.createElement("option");
-                option.textContent = optionText;
-                option.value = optionText.toLowerCase().replace(/\s+/g, "_");
-                corporateDropdownList.appendChild(option);
-            });
-
-            targetDiv.appendChild(corporateDropdownList);
+            getCorporateDropdownList(targetDiv)
 
         } //End of if statement
 
         if (selectedOption == "Organisation Details" && targetDiv){
 
-            corporateDropdownOptions.forEach(optionText => {
-                const option = document.createElement("option");
-                option.textContent = optionText;
-                option.value = optionText.toLowerCase().replace(/\s+/g, "_");
-                corporateDropdownList.appendChild(option);
-            });
-
-            targetDiv.appendChild(corporateDropdownList);
+            getCorporateDropdownList(targetDiv)
+            getDivisionDropdownList(targetDiv)
 
         }
 

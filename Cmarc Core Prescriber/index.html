@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>C MARC : Core Prescriber Application</title>
+</head>
+<body>
+
+    <h1>C MARC : CORE PRESCRIBER APPLICATION</h1>
+
+    <form class="input-container" method="post">
+
+        <div class="group-1">
+
+            <div class="sub-group">
+                <label for="fmnth">FMNTH Key:</label>
+                <input type="text" id="fmnth">
+            </div>
+            
+            <label for="spcl-options">Select specialties</label>
+            <select name="spcl-options" id="" multiple>
+
+                <option value="CPR">CPR</option>
+                <option value="GEN PHY">GEN PHY</option>
+                <option value="CONS PHY">CONS PHY</option>
+                <option value="PAEDIA">PAEDIA</option>
+
+            </select>
+
+        </div>
+
+        <div class="group-2">
+
+            <label for="options">Select an option</label>
+            <select name="options">
+                <option value="corporate">Corporate</option>
+                <option value="brand">Brand</option>
+                <option value="pm">Product Market</option>
+            </select>
+
+        </div>
+
+    </form>
+    
+</body>
+</html>
