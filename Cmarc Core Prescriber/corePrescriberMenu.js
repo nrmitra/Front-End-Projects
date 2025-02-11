@@ -2,17 +2,20 @@ const selectedOption = document.getElementById("options")
 let selectedOptionValue = document.getElementById("options").value
 const dropdown = document.getElementById("sub-options-dropdown")
     
-// alert(selectedOptionValue)
-
 async function populateDropdown(){
 
     const corporateOptions = ["Corporate 1","Corporate 2","Corporate 3"]
-    const brandOptions = ["Brand 1","Brand 2","Brand 3"]
-  
+    const brandOptions = ["Brand 1","Brand 2","Brand 3","Brand abcX123"]
 
     if (selectedOptionValue == "corporate"){
 
         dropdown.innerHTML = ''
+        dropdown.style.display = "inline-block"
+
+        if(document.getElementById('pm-file-name')){
+            document.getElementById('pm-file-name').remove()
+        }
+        
 
         corporateOptions.forEach(element => {
     
@@ -29,6 +32,11 @@ async function populateDropdown(){
     if (selectedOptionValue == "brand"){
 
         dropdown.innerHTML = ''
+        dropdown.style.display = "inline-block"
+
+        if(document.getElementById('pm-file-name')){
+            document.getElementById('pm-file-name').remove()
+        }
 
         brandOptions.forEach(element => {
 
@@ -40,6 +48,18 @@ async function populateDropdown(){
         });
 
     } // if statement
+
+    if (selectedOptionValue == "pm"){
+        dropdown.style.display = "none"
+
+        let x = document.createElement("input");
+        x.setAttribute("type", "text");
+        x.id = "pm-file-name"
+
+        subGroupDropdown = document.getElementById("sub-group-dropdown")
+
+        subGroupDropdown.appendChild(x)
+    }
 
 
 } // async function
