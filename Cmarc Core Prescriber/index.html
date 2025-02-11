@@ -19,33 +19,54 @@
                 <input type="text" id="fmnth">
             </div>
             
-            <label for="spcl-options">Select specialties</label>
-            <select name="spcl-options" id="" multiple>
+            <div class="sub-group">
 
-                <option value="CPR">CPR</option>
-                <option value="GEN PHY">GEN PHY</option>
-                <option value="CONS PHY">CONS PHY</option>
-                <option value="PAEDIA">PAEDIA</option>
+                <label for="spcl-options">Select specialties:</label>
+                <select name="spcl-options" id="spcl-options" multiple>
 
-            </select>
+                    <option value="CPR">CPR</option>
+                    <option value="GEN PHY">GEN PHY</option>
+                    <option value="CONS PHY">CONS PHY</option>
+                    <option value="PAEDIA">PAEDIA</option>
+
+                </select>
+
+            </div>
+            
 
         </div>
 
         <div class="group-2">
 
-            <label for="options">Select an option</label>
-            <select name="options" id="options">
-                <option value="corporate">Corporate</option>
-                <option value="brand">Brand</option>
-                <option value="pm">Product Market</option>
-            </select>
+            <div class="sub-group">
 
-            <label for="sub-options" id="sub-options">Select a value</label>
-            <select name="sub-options" id="sub-options-dropdown"></select>
+                <label for="options">Select an option</label>
+                <select name="options" id="options">
+                    <option value="corporate">Corporate</option>
+                    <option value="brand">Brand</option>
+                    <option value="pm">Product Market</option>
+                </select>
+
+            </div>
+
+            <div class="sub-group">
+
+                <label for="sub-options" id="sub-options">Select a value</label>
+                <select name="sub-options" id="sub-options-dropdown"></select>
+
+            </div>
+
+            
 
         </div>
 
     </form>
+
+    <div class="button-container">
+
+        <button id="submit">SUBMIT</button>
+
+    </div>
     
 </body>
 <script src="corePrescriberMenu.js"></script>

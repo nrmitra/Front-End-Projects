@@ -2,7 +2,7 @@ const selectedOption = document.getElementById("options")
 let selectedOptionValue = document.getElementById("options").value
 const dropdown = document.getElementById("sub-options-dropdown")
     
-alert(selectedOptionValue)
+// alert(selectedOptionValue)
 
 async function populateDropdown(){
 
@@ -50,6 +50,6 @@ document.addEventListener("DOMContentLoaded", populateDropdown);
 
 selectedOption.addEventListener("change",function(event){
     selectedOptionValue = event.target.value;
-    alert(selectedOptionValue)
+    // alert(selectedOptionValue)
     populateDropdown();
 })
